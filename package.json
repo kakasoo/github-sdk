@@ -10,7 +10,7 @@
   "module": "lib/index.mjs",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "rimraf lib && tsc && rollup -c",
+    "build": "rimraf lib && tsc",
     "build:test": "rimraf bin && tsc --project test/tsconfig.json",
     "deploy": "npm run build && npm publish",
     "dev": "npm run build:test -- --watch",
