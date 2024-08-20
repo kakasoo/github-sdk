@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { nullable_minus_scoped_minus_installation } from "./nullable_minus_scoped_minus_installation";
+import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 
 /**
  * The authorization for an OAuth app, GitHub App, or a Personal Access Token.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { actions_minus_set_minus_default_minus_workflow_minus_permissions } from "@kakasoo/github-sdk/lib/structures/actions_minus_set_minus_default_minus_workflow_minus_permissions";
 import typia from "typia";
-
-import { actions_minus_set_minus_default_minus_workflow_minus_permissions } from "@ORGANIZATION/PROJECT-api/lib/structures/actions_minus_set_minus_default_minus_workflow_minus_permissions";
 
 export async function test_api_repos_actions_permissions_workflow_putByOwnerAndRepo(
   connection: api.IConnection,

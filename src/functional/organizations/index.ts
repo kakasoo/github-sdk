@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiOrganizations } from "../../structures/IApiOrganizations";
 import { organization_minus_simple } from "../../structures/organization_minus_simple";
+
 /**
  * List organizations.
  * Lists all organizations, in the order that they were created.

@@ -1,9 +1,9 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
 import typia from "typia";
 
 ;
-import { import } from "@ORGANIZATION/PROJECT-api/lib/structures/import";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
+import { import } from "@kakasoo/github-sdk/lib/structures/import";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
 
 ;
 export async function test_api_repos__import_putByOwnerAndRepo(connection: api.IConnection) {

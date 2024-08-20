@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposStatsCodeFrequency } from "../../../../structures/IApiReposStatsCodeFrequency";
 import { code_minus_frequency_minus_stat } from "../../../../structures/code_minus_frequency_minus_stat";
+
 /**
  * Get the weekly commit activity.
  * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposLanguages } from "../../../structures/IApiReposLanguages";
 import { language } from "../../../structures/language";
+
 /**
  * List repository languages.
  * Lists languages for the specified repository. The value shown for each language is the number of bytes of code written in that language.

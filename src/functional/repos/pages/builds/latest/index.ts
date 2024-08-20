@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPagesBuildsLatest } from "../../../../../structures/IApiReposPagesBuildsLatest";
 import { page_minus_build } from "../../../../../structures/page_minus_build";
+
 /**
  * Get latest Pages build.
  * Gets information about the single most recent build of a GitHub Pages site.

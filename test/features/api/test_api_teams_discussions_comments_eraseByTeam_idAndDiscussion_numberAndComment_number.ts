@@ -1,4 +1,4 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
 import typia from "typia";
 
 export async function test_api_teams_discussions_comments_eraseByTeam_idAndDiscussion_numberAndComment_number(

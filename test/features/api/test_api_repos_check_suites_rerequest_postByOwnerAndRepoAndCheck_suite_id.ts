@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { empty_minus_object } from "@kakasoo/github-sdk/lib/structures/empty_minus_object";
 import typia from "typia";
-
-import { empty_minus_object } from "@ORGANIZATION/PROJECT-api/lib/structures/empty_minus_object";
 
 export async function test_api_repos_check_suites_rerequest_postByOwnerAndRepoAndCheck_suite_id(
   connection: api.IConnection,

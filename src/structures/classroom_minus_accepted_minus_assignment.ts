@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
-import { simple_minus_classroom_minus_user } from "./simple_minus_classroom_minus_user";
-import { simple_minus_classroom_minus_repository } from "./simple_minus_classroom_minus_repository";
 import { simple_minus_classroom_minus_assignment } from "./simple_minus_classroom_minus_assignment";
+import { simple_minus_classroom_minus_repository } from "./simple_minus_classroom_minus_repository";
+import { simple_minus_classroom_minus_user } from "./simple_minus_classroom_minus_user";
 
 /**
  * A GitHub Classroom accepted assignment

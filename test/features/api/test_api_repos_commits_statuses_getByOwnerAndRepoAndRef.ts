@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { status } from "@kakasoo/github-sdk/lib/structures/status";
 import typia from "typia";
-
-import { status } from "@ORGANIZATION/PROJECT-api/lib/structures/status";
 
 export async function test_api_repos_commits_statuses_getByOwnerAndRepoAndRef(
   connection: api.IConnection,

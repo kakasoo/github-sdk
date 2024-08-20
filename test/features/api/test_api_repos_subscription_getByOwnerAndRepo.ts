@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { repository_minus_subscription } from "@kakasoo/github-sdk/lib/structures/repository_minus_subscription";
 import typia from "typia";
-
-import { repository_minus_subscription } from "@ORGANIZATION/PROJECT-api/lib/structures/repository_minus_subscription";
 
 export async function test_api_repos_subscription_getByOwnerAndRepo(
   connection: api.IConnection,

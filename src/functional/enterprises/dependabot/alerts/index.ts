@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiEnterprisesDependabotAlerts } from "../../../../structures/IApiEnterprisesDependabotAlerts";
 import { dependabot_minus_alert_minus_with_minus_repository } from "../../../../structures/dependabot_minus_alert_minus_with_minus_repository";
+
 /**
  * List Dependabot alerts for an enterprise.
  * Lists Dependabot alerts for repositories that are owned by the specified enterprise.

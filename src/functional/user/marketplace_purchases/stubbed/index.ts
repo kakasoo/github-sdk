@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiUserMarketplacePurchasesStubbed } from "../../../../structures/IApiUserMarketplacePurchasesStubbed";
 import { user_minus_marketplace_minus_purchase } from "../../../../structures/user_minus_marketplace_minus_purchase";
+
 /**
  * List subscriptions for the authenticated user (stubbed).
  * Lists the active subscriptions for the authenticated user.

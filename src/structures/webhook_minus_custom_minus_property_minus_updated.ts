@@ -1,7 +1,7 @@
 import { custom_minus_property } from "./custom_minus_property";
 import { enterprise_minus_webhooks } from "./enterprise_minus_webhooks";
-import { simple_minus_installation } from "./simple_minus_installation";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
+import { simple_minus_installation } from "./simple_minus_installation";
 import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
 
 /**

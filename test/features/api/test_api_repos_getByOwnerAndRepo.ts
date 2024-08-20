@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { full_minus_repository } from "@kakasoo/github-sdk/lib/structures/full_minus_repository";
 import typia from "typia";
-
-import { full_minus_repository } from "@ORGANIZATION/PROJECT-api/lib/structures/full_minus_repository";
 
 export async function test_api_repos_getByOwnerAndRepo(
   connection: api.IConnection,

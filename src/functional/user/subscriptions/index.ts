@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiUserSubscriptions } from "../../../structures/IApiUserSubscriptions";
 import { minimal_minus_repository } from "../../../structures/minimal_minus_repository";
+
 /**
  * List repositories watched by the authenticated user.
  * Lists repositories the authenticated user is watching.

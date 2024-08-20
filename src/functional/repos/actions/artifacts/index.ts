@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsArtifacts } from "../../../../structures/IApiReposActionsArtifacts";
-import { response } from "../../../../structures/response";
 import { artifact } from "../../../../structures/artifact";
+import { response } from "../../../../structures/response";
+
 /**
  * List artifacts for a repository.
  * Lists all artifacts for a repository.

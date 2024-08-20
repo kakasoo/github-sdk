@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsMigrations } from "@kakasoo/github-sdk/lib/structures/IApiOrgsMigrations";
+import { migration } from "@kakasoo/github-sdk/lib/structures/migration";
 import typia from "typia";
-
-import { migration } from "@ORGANIZATION/PROJECT-api/lib/structures/migration";
-import { IApiOrgsMigrations } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsMigrations";
 
 export async function test_api_orgs_migrations_getByOrg(
   connection: api.IConnection,

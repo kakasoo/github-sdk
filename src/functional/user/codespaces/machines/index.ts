@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserCodespacesMachines } from "../../../../structures/IApiUserCodespacesMachines";
 import { response } from "../../../../structures/response";
+
 /**
  * List machine types for a codespace.
  * List the machine types a codespace can transition to use.

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsOrganizationSecrets } from "../../../../structures/IApiReposActionsOrganizationSecrets";
 import { response } from "../../../../structures/response";
+
 /**
  * List repository organization secrets.
  * Lists all organization secrets shared with a repository without revealing their encrypted

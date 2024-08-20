@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { language } from "@kakasoo/github-sdk/lib/structures/language";
 import typia from "typia";
-
-import { language } from "@ORGANIZATION/PROJECT-api/lib/structures/language";
 
 export async function test_api_repos_languages_getByOwnerAndRepo(
   connection: api.IConnection,

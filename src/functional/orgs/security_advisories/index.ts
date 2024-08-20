@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsSecurityAdvisories } from "../../../structures/IApiOrgsSecurityAdvisories";
 import { repository_minus_advisory } from "../../../structures/repository_minus_advisory";
+
 /**
  * List repository security advisories for an organization.
  * Lists repository security advisories for an organization.

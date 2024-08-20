@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposStatsPunchCard } from "../../../../structures/IApiReposStatsPunchCard";
 import { code_minus_frequency_minus_stat } from "../../../../structures/code_minus_frequency_minus_stat";
+
 /**
  * Get the hourly commit count for each day.
  * Each array contains the day number, hour number, and number of commits:

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { workflow_minus_run_minus_usage } from "@kakasoo/github-sdk/lib/structures/workflow_minus_run_minus_usage";
 import typia from "typia";
-
-import { workflow_minus_run_minus_usage } from "@ORGANIZATION/PROJECT-api/lib/structures/workflow_minus_run_minus_usage";
 
 export async function test_api_repos_actions_runs_timing_getByOwnerAndRepoAndRun_id(
   connection: api.IConnection,

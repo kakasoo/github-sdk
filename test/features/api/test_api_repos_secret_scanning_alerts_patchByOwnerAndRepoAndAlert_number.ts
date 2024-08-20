@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { secret_minus_scanning_minus_alert } from "@kakasoo/github-sdk/lib/structures/secret_minus_scanning_minus_alert";
 import typia from "typia";
-
-import { secret_minus_scanning_minus_alert } from "@ORGANIZATION/PROJECT-api/lib/structures/secret_minus_scanning_minus_alert";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_secret_scanning_alerts_patchByOwnerAndRepoAndAlert_number(
   connection: api.IConnection,

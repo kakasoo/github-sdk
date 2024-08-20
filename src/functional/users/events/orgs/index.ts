@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersEventsOrgs } from "../../../../structures/IApiUsersEventsOrgs";
 import { event } from "../../../../structures/event";
+
 /**
  * List organization events for the authenticated user.
  * This is the user's organization dashboard. You must be authenticated as the user to view this.

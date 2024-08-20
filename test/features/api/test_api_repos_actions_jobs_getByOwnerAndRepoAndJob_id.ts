@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { job } from "@kakasoo/github-sdk/lib/structures/job";
 import typia from "typia";
-
-import { job } from "@ORGANIZATION/PROJECT-api/lib/structures/job";
 
 export async function test_api_repos_actions_jobs_getByOwnerAndRepoAndJob_id(
   connection: api.IConnection,

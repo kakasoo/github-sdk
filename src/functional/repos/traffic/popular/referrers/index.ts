@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposTrafficPopularReferrers } from "../../../../../structures/IApiReposTrafficPopularReferrers";
 import { referrer_minus_traffic } from "../../../../../structures/referrer_minus_traffic";
+
 /**
  * Get top referral sources.
  * Get the top 10 referrers over the last 14 days.

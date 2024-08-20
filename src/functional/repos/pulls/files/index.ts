@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsFiles } from "../../../../structures/IApiReposPullsFiles";
 import { diff_minus_entry } from "../../../../structures/diff_minus_entry";
+
 /**
  * List pull requests files.
  * Lists the files in a specified pull request.

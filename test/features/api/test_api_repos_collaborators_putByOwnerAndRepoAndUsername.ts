@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { repository_minus_invitation } from "@kakasoo/github-sdk/lib/structures/repository_minus_invitation";
 import typia from "typia";
-
-import { repository_minus_invitation } from "@ORGANIZATION/PROJECT-api/lib/structures/repository_minus_invitation";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_collaborators_putByOwnerAndRepoAndUsername(
   connection: api.IConnection,

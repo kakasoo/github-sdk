@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeownersErrors } from "../../../../structures/IApiReposCodeownersErrors";
 import { codeowners_minus_errors } from "../../../../structures/codeowners_minus_errors";
+
 /**
  * List CODEOWNERS errors.
  * List any syntax errors that are detected in the CODEOWNERS

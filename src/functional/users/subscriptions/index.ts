@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersSubscriptions } from "../../../structures/IApiUsersSubscriptions";
 import { minimal_minus_repository } from "../../../structures/minimal_minus_repository";
+
 /**
  * List repositories watched by a user.
  * Lists repositories a user is watching.

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsTeamsDiscussionsReactions } from "../../../../../structures/IApiOrgsTeamsDiscussionsReactions";
-import { reaction } from "../../../../../structures/reaction";
 import { body } from "../../../../../structures/body";
+import { reaction } from "../../../../../structures/reaction";
+
 /**
  * List reactions for a team discussion.
  * List the reactions to a [team discussion](https://docs.github.com/rest/teams/discussions#get-a-discussion).

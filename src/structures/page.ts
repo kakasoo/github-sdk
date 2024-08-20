@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { pages_minus_source_minus_hash } from "./pages_minus_source_minus_hash";
 import { pages_minus_https_minus_certificate } from "./pages_minus_https_minus_certificate";
+import { pages_minus_source_minus_hash } from "./pages_minus_source_minus_hash";
 
 /**
  * The configuration for GitHub Pages for a repository.

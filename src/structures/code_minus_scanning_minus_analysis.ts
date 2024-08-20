@@ -1,14 +1,14 @@
 import { tags } from "typia";
 
-import { code_minus_scanning_minus_ref } from "./code_minus_scanning_minus_ref";
-import { code_minus_scanning_minus_analysis_minus_commit_minus_sha } from "./code_minus_scanning_minus_analysis_minus_commit_minus_sha";
 import { code_minus_scanning_minus_analysis_minus_analysis_minus_key } from "./code_minus_scanning_minus_analysis_minus_analysis_minus_key";
-import { code_minus_scanning_minus_analysis_minus_environment } from "./code_minus_scanning_minus_analysis_minus_environment";
 import { code_minus_scanning_minus_analysis_minus_category } from "./code_minus_scanning_minus_analysis_minus_category";
+import { code_minus_scanning_minus_analysis_minus_commit_minus_sha } from "./code_minus_scanning_minus_analysis_minus_commit_minus_sha";
 import { code_minus_scanning_minus_analysis_minus_created_minus_at } from "./code_minus_scanning_minus_analysis_minus_created_minus_at";
-import { code_minus_scanning_minus_analysis_minus_url } from "./code_minus_scanning_minus_analysis_minus_url";
+import { code_minus_scanning_minus_analysis_minus_environment } from "./code_minus_scanning_minus_analysis_minus_environment";
 import { code_minus_scanning_minus_analysis_minus_sarif_minus_id } from "./code_minus_scanning_minus_analysis_minus_sarif_minus_id";
 import { code_minus_scanning_minus_analysis_minus_tool } from "./code_minus_scanning_minus_analysis_minus_tool";
+import { code_minus_scanning_minus_analysis_minus_url } from "./code_minus_scanning_minus_analysis_minus_url";
+import { code_minus_scanning_minus_ref } from "./code_minus_scanning_minus_ref";
 
 export type code_minus_scanning_minus_analysis = {
   ref: code_minus_scanning_minus_ref;

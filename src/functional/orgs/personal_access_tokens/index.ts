@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsPersonalAccessTokens } from "../../../structures/IApiOrgsPersonalAccessTokens";
-import { organization_minus_programmatic_minus_access_minus_grant } from "../../../structures/organization_minus_programmatic_minus_access_minus_grant";
 import { body } from "../../../structures/body";
+import { organization_minus_programmatic_minus_access_minus_grant } from "../../../structures/organization_minus_programmatic_minus_access_minus_grant";
+
 export * as repositories from "./repositories";
 /**
  * List fine-grained personal access tokens with access to organization resources.

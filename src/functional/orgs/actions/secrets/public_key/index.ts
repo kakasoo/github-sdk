@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsActionsSecretsPublicKey } from "../../../../../structures/IApiOrgsActionsSecretsPublicKey";
 import { actions_minus_public_minus_key } from "../../../../../structures/actions_minus_public_minus_key";
+
 /**
  * Get an organization public key.
  * Gets your public key, which you need to encrypt secrets. You need to

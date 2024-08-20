@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsActionsRunners } from "@kakasoo/github-sdk/lib/structures/IApiOrgsActionsRunners";
+import { response } from "@kakasoo/github-sdk/lib/structures/response";
 import typia from "typia";
-
-import { response } from "@ORGANIZATION/PROJECT-api/lib/structures/response";
-import { IApiOrgsActionsRunners } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsActionsRunners";
 
 export async function test_api_orgs_actions_runners_getByOrg(
   connection: api.IConnection,

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodespacesNew } from "../../../../structures/IApiReposCodespacesNew";
 import { response } from "../../../../structures/response";
+
 /**
  * Get default attributes for a codespace.
  * Gets the default attributes for codespaces created by the user with the repository.

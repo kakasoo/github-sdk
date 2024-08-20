@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { check_minus_annotation } from "@kakasoo/github-sdk/lib/structures/check_minus_annotation";
 import typia from "typia";
-
-import { check_minus_annotation } from "@ORGANIZATION/PROJECT-api/lib/structures/check_minus_annotation";
 
 export async function test_api_repos_check_runs_annotations_getByOwnerAndRepoAndCheck_run_id(
   connection: api.IConnection,

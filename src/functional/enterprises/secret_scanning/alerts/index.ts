@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiEnterprisesSecretScanningAlerts } from "../../../../structures/IApiEnterprisesSecretScanningAlerts";
 import { organization_minus_secret_minus_scanning_minus_alert } from "../../../../structures/organization_minus_secret_minus_scanning_minus_alert";
+
 /**
  * List secret scanning alerts for an enterprise.
  * Lists secret scanning alerts for eligible repositories in an enterprise, from newest to oldest.

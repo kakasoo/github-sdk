@@ -1,4 +1,4 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
 import typia from "typia";
 
 export async function test_api_orgs_hooks_deliveries_attempts_postByOrgAndHook_idAndDelivery_id(

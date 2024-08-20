@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiUserFollowers } from "../../../structures/IApiUserFollowers";
 import { simple_minus_user } from "../../../structures/simple_minus_user";
+
 /**
  * List followers of the authenticated user.
  * Lists the people following the authenticated user.

@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { security_minus_advisory_minus_ecosystems } from "./security_minus_advisory_minus_ecosystems";
 import { security_minus_advisory_minus_credit_minus_types } from "./security_minus_advisory_minus_credit_minus_types";
+import { security_minus_advisory_minus_ecosystems } from "./security_minus_advisory_minus_ecosystems";
 
 export type repository_minus_advisory_minus_create = {
   /**

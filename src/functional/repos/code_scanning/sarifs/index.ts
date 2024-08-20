@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeScanningSarifs } from "../../../../structures/IApiReposCodeScanningSarifs";
 import { body } from "../../../../structures/body";
 import { code_minus_scanning_minus_sarifs_minus_status } from "../../../../structures/code_minus_scanning_minus_sarifs_minus_status";
+
 /**
  * Upload an analysis as SARIF data.
  * Uploads SARIF data containing the results of a code scanning analysis to make the results available in a repository. For troubleshooting information, see "[Troubleshooting SARIF uploads](https://docs.github.com/code-security/code-scanning/troubleshooting-sarif)."

@@ -1,4 +1,4 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
 import typia, { tags } from "typia";
 
 export async function test_api_orgs_codespaces_secrets_repositories_eraseByOrgAndSecret_nameAndRepository_id(

@@ -1,5 +1,5 @@
-import { interaction_minus_group } from "./interaction_minus_group";
 import { interaction_minus_expiry } from "./interaction_minus_expiry";
+import { interaction_minus_group } from "./interaction_minus_group";
 
 /**
  * Limit interactions to a specific type of user for a specified duration

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { pull_minus_request_minus_simple } from "@kakasoo/github-sdk/lib/structures/pull_minus_request_minus_simple";
 import typia from "typia";
-
-import { pull_minus_request_minus_simple } from "@ORGANIZATION/PROJECT-api/lib/structures/pull_minus_request_minus_simple";
 
 export async function test_api_repos_commits_pulls_getByOwnerAndRepoAndCommit_sha(
   connection: api.IConnection,

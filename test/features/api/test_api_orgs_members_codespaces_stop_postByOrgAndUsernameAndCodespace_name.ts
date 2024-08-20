@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { codespace } from "@kakasoo/github-sdk/lib/structures/codespace";
 import typia from "typia";
-
-import { codespace } from "@ORGANIZATION/PROJECT-api/lib/structures/codespace";
 
 export async function test_api_orgs_members_codespaces_stop_postByOrgAndUsernameAndCodespace_name(
   connection: api.IConnection,

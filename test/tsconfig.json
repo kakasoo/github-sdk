@@ -3,8 +3,8 @@
   "compilerOptions": {
     "outDir": "../bin",
     "paths": {
-      "@ORGANIZATION/PROJECT-api": ["../src"],
-      "@ORGANIZATION/PROJECT-api/lib/*": ["../src/*"],
+      "@kakasoo/github-sdk": ["../src"],
+      "@kakasoo/github-sdk/lib/*": ["../src/*"],
     },
     "plugins": [
       { "transform": "typia/lib/transform" },

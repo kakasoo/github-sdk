@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { milestone } from "@kakasoo/github-sdk/lib/structures/milestone";
 import typia from "typia";
-
-import { milestone } from "@ORGANIZATION/PROJECT-api/lib/structures/milestone";
 
 export async function test_api_repos_milestones_getByOwnerAndRepoAndMilestone_number(
   connection: api.IConnection,

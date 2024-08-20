@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiApplicationsTokenScoped } from "../../../../structures/IApiApplicationsTokenScoped";
-import { body } from "../../../../structures/body";
 import { authorization } from "../../../../structures/authorization";
+import { body } from "../../../../structures/body";
+
 /**
  * Create a scoped access token.
  * Use a non-scoped user access token to create a repository-scoped and/or permission-scoped user access token. You can specify

@@ -1,9 +1,10 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposHooksPings } from "../../../../structures/IApiReposHooksPings";
+
 /**
  * Ping a repository webhook.
  * This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook.

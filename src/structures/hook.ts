@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { webhook_minus_config } from "./webhook_minus_config";
 import { hook_minus_response } from "./hook_minus_response";
+import { webhook_minus_config } from "./webhook_minus_config";
 
 /**
  * Webhooks for repositories.

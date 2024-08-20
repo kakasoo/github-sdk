@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiEvents } from "../../structures/IApiEvents";
 import { event } from "../../structures/event";
+
 /**
  * List public events.
  * > [!NOTE]

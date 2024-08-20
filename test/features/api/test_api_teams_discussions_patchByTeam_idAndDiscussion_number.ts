@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { team_minus_discussion } from "@kakasoo/github-sdk/lib/structures/team_minus_discussion";
 import typia from "typia";
-
-import { team_minus_discussion } from "@ORGANIZATION/PROJECT-api/lib/structures/team_minus_discussion";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_teams_discussions_patchByTeam_idAndDiscussion_number(
   connection: api.IConnection,

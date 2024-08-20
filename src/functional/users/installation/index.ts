@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersInstallation } from "../../../structures/IApiUsersInstallation";
 import { installation } from "../../../structures/installation";
+
 /**
  * Get a user installation for the authenticated app.
  * Enables an authenticated GitHub App to find the user’s installation information.

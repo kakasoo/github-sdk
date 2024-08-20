@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsRunsAttempts } from "../../../../../structures/IApiReposActionsRunsAttempts";
 import { workflow_minus_run } from "../../../../../structures/workflow_minus_run";
+
 export * as jobs from "./jobs";
 export * as logs from "./logs";
 /**

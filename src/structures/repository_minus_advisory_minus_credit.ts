@@ -1,5 +1,5 @@
-import { simple_minus_user } from "./simple_minus_user";
 import { security_minus_advisory_minus_credit_minus_types } from "./security_minus_advisory_minus_credit_minus_types";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * A credit given to a user for a repository security advisory.

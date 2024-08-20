@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposSecretScanningAlerts } from "../../../../structures/IApiReposSecretScanningAlerts";
-import { secret_minus_scanning_minus_alert } from "../../../../structures/secret_minus_scanning_minus_alert";
 import { body } from "../../../../structures/body";
+import { secret_minus_scanning_minus_alert } from "../../../../structures/secret_minus_scanning_minus_alert";
+
 export * as locations from "./locations";
 /**
  * List secret scanning alerts for a repository.

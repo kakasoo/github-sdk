@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsTeamsDiscussionsComments } from "../../../../../structures/IApiOrgsTeamsDiscussionsComments";
-import { team_minus_discussion_minus_comment } from "../../../../../structures/team_minus_discussion_minus_comment";
 import { body } from "../../../../../structures/body";
+import { team_minus_discussion_minus_comment } from "../../../../../structures/team_minus_discussion_minus_comment";
+
 export * as reactions from "./reactions";
 /**
  * List discussion comments.

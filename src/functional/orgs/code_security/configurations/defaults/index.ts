@@ -1,12 +1,13 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsCodeSecurityConfigurationsDefaults } from "../../../../../structures/IApiOrgsCodeSecurityConfigurationsDefaults";
-import { code_minus_security_minus_default_minus_configurations } from "../../../../../structures/code_minus_security_minus_default_minus_configurations";
 import { body } from "../../../../../structures/body";
+import { code_minus_security_minus_default_minus_configurations } from "../../../../../structures/code_minus_security_minus_default_minus_configurations";
 import { response } from "../../../../../structures/response";
+
 /**
  * Get default code security configurations.
  * Lists the default code security configurations for an organization.

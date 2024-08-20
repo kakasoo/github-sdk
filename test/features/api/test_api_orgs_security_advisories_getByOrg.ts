@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsSecurityAdvisories } from "@kakasoo/github-sdk/lib/structures/IApiOrgsSecurityAdvisories";
+import { repository_minus_advisory } from "@kakasoo/github-sdk/lib/structures/repository_minus_advisory";
 import typia from "typia";
-
-import { repository_minus_advisory } from "@ORGANIZATION/PROJECT-api/lib/structures/repository_minus_advisory";
-import { IApiOrgsSecurityAdvisories } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsSecurityAdvisories";
 
 export async function test_api_orgs_security_advisories_getByOrg(
   connection: api.IConnection,

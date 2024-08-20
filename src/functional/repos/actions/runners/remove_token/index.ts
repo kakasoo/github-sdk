@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsRunnersRemoveToken } from "../../../../../structures/IApiReposActionsRunnersRemoveToken";
 import { authentication_minus_token } from "../../../../../structures/authentication_minus_token";
+
 /**
  * Create a remove token for a repository.
  * Returns a token that you can pass to the `config` script to remove a self-hosted runner from an repository. The token expires after one hour.

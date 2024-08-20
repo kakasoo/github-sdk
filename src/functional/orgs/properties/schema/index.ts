@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsPropertiesSchema } from "../../../../structures/IApiOrgsPropertiesSchema";
-import { custom_minus_property } from "../../../../structures/custom_minus_property";
 import { body } from "../../../../structures/body";
+import { custom_minus_property } from "../../../../structures/custom_minus_property";
+
 /**
  * Get all custom properties for an organization.
  * Gets all custom properties defined for an organization.

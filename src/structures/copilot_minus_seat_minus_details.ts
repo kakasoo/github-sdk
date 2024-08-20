@@ -1,9 +1,9 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
-import { organization_minus_simple } from "./organization_minus_simple";
-import { team } from "./team";
 import { enterprise_minus_team } from "./enterprise_minus_team";
+import { organization_minus_simple } from "./organization_minus_simple";
+import { simple_minus_user } from "./simple_minus_user";
+import { team } from "./team";
 
 /**
  * Information about a Copilot Business seat assignment for a user, team, or organization.

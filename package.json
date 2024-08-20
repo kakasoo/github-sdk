@@ -16,7 +16,8 @@
     "swagger": "ts-node test/swagger.ts",
     "test": "ts-node test/index.ts",
     "test:simulate": "ts-node test/index.ts --simulate true",
-    "test:manual": "ts-node test/manual.ts"
+    "test:manual": "ts-node test/manual.ts",
+    "prettier": "prettier src --write && prettier test --write"
   },
   "repository": {
     "type": "git",

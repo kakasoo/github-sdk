@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsRunnersDownloads } from "../../../../../structures/IApiReposActionsRunnersDownloads";
 import { runner_minus_application } from "../../../../../structures/runner_minus_application";
+
 /**
  * List runner applications for a repository.
  * Lists binaries for the runner application that you can download and run.

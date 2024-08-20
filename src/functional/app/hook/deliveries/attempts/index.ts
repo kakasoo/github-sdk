@@ -1,9 +1,10 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiAppHookDeliveriesAttempts } from "../../../../../structures/IApiAppHookDeliveriesAttempts";
+
 /**
  * Redeliver a delivery for an app webhook.
  * Redeliver a delivery for the webhook configured for a GitHub App.

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersFollowing } from "../../../structures/IApiUsersFollowing";
 import { simple_minus_user } from "../../../structures/simple_minus_user";
+
 /**
  * List the people a user follows.
  * Lists the people who the specified user follows.

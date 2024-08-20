@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposStatsCommitActivity } from "../../../../structures/IApiReposStatsCommitActivity";
 import { commit_minus_activity } from "../../../../structures/commit_minus_activity";
+
 /**
  * Get the last year of commit activity.
  * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.

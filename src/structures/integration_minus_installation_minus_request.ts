@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
 import { enterprise } from "./enterprise";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * Request to install an integration on a target

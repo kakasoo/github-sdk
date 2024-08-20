@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposTeams } from "../../../structures/IApiReposTeams";
 import { team } from "../../../structures/team";
+
 /**
  * List repository teams.
  * Lists the teams that have access to the specified repository and that are also visible to the authenticated user.

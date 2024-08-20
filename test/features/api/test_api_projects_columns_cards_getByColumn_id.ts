@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiProjectsColumnsCards } from "@kakasoo/github-sdk/lib/structures/IApiProjectsColumnsCards";
+import { project_minus_card } from "@kakasoo/github-sdk/lib/structures/project_minus_card";
 import typia from "typia";
-
-import { project_minus_card } from "@ORGANIZATION/PROJECT-api/lib/structures/project_minus_card";
-import { IApiProjectsColumnsCards } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiProjectsColumnsCards";
 
 export async function test_api_projects_columns_cards_getByColumn_id(
   connection: api.IConnection,

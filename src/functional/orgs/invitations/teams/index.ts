@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsInvitationsTeams } from "../../../../structures/IApiOrgsInvitationsTeams";
 import { team } from "../../../../structures/team";
+
 /**
  * List organization invitation teams.
  * List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner.

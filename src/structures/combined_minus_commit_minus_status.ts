@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { simple_minus_commit_minus_status } from "./simple_minus_commit_minus_status";
 import { minimal_minus_repository } from "./minimal_minus_repository";
+import { simple_minus_commit_minus_status } from "./simple_minus_commit_minus_status";
 
 /**
  * Combined Commit Status

@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiUserTeams } from "../../../structures/IApiUserTeams";
 import { team_minus_full } from "../../../structures/team_minus_full";
+
 /**
  * List teams for the authenticated user.
  * List all of the teams across all of the organizations to which the authenticated

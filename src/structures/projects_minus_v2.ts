@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
 import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * A projects v2 project

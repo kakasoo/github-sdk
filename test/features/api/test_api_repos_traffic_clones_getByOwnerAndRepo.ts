@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { clone_minus_traffic } from "@kakasoo/github-sdk/lib/structures/clone_minus_traffic";
 import typia from "typia";
-
-import { clone_minus_traffic } from "@ORGANIZATION/PROJECT-api/lib/structures/clone_minus_traffic";
 
 export async function test_api_repos_traffic_clones_getByOwnerAndRepo(
   connection: api.IConnection,

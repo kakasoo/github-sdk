@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { custom_minus_property_minus_value } from "@kakasoo/github-sdk/lib/structures/custom_minus_property_minus_value";
 import typia from "typia";
-
-import { custom_minus_property_minus_value } from "@ORGANIZATION/PROJECT-api/lib/structures/custom_minus_property_minus_value";
 
 export async function test_api_repos_properties_values_getByOwnerAndRepo(
   connection: api.IConnection,

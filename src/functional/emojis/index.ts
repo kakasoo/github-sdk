@@ -3,6 +3,7 @@ import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
 
 import { response } from "../../structures/response";
+
 /**
  * Get emojis.
  * Lists all the emojis available to use on GitHub.

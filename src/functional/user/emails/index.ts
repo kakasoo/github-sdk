@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserEmails } from "../../../structures/IApiUserEmails";
-import { email } from "../../../structures/email";
 import { body } from "../../../structures/body";
+import { email } from "../../../structures/email";
+
 /**
  * List email addresses for the authenticated user.
  * Lists all of your email addresses, and specifies which one is visible

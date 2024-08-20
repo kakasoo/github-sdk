@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
 import { integration } from "./integration";
-import { pull_minus_request_minus_minimal } from "./pull_minus_request_minus_minimal";
 import { minimal_minus_repository } from "./minimal_minus_repository";
+import { pull_minus_request_minus_minimal } from "./pull_minus_request_minus_minimal";
 
 /**
  * A suite of checks performed on the code of a given code change

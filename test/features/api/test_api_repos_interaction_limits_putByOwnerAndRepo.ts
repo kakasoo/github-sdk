@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { interaction_minus_limit } from "@kakasoo/github-sdk/lib/structures/interaction_minus_limit";
+import { interaction_minus_limit_minus_response } from "@kakasoo/github-sdk/lib/structures/interaction_minus_limit_minus_response";
 import typia from "typia";
-
-import { interaction_minus_limit_minus_response } from "@ORGANIZATION/PROJECT-api/lib/structures/interaction_minus_limit_minus_response";
-import { interaction_minus_limit } from "@ORGANIZATION/PROJECT-api/lib/structures/interaction_minus_limit";
 
 export async function test_api_repos_interaction_limits_putByOwnerAndRepo(
   connection: api.IConnection,

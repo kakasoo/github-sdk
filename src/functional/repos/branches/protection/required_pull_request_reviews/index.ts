@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposBranchesProtectionRequiredPullRequestReviews } from "../../../../../structures/IApiReposBranchesProtectionRequiredPullRequestReviews";
-import { protected_minus_branch_minus_pull_minus_request_minus_review } from "../../../../../structures/protected_minus_branch_minus_pull_minus_request_minus_review";
 import { body } from "../../../../../structures/body";
+import { protected_minus_branch_minus_pull_minus_request_minus_review } from "../../../../../structures/protected_minus_branch_minus_pull_minus_request_minus_review";
+
 /**
  * Get pull request review protection.
  * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.

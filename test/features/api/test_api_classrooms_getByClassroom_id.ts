@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { classroom } from "@kakasoo/github-sdk/lib/structures/classroom";
 import typia from "typia";
-
-import { classroom } from "@ORGANIZATION/PROJECT-api/lib/structures/classroom";
 
 export async function test_api_classrooms_getByClassroom_id(
   connection: api.IConnection,

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersSettingsBillingActions } from "../../../../../structures/IApiUsersSettingsBillingActions";
 import { actions_minus_billing_minus_usage } from "../../../../../structures/actions_minus_billing_minus_usage";
+
 /**
  * Get GitHub Actions billing for a user.
  * Gets the summary of the free and paid GitHub Actions minutes used.

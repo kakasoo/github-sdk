@@ -1,10 +1,10 @@
 import { tags } from "typia";
 
-import { webhooks_nullable_string } from "./webhooks_nullable_string";
 import { enterprise_minus_webhooks } from "./enterprise_minus_webhooks";
-import { simple_minus_installation } from "./simple_minus_installation";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
+import { simple_minus_installation } from "./simple_minus_installation";
 import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
+import { webhooks_nullable_string } from "./webhooks_nullable_string";
 
 /**
  * @title push event

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserIssues } from "../../../structures/IApiUserIssues";
 import { issue } from "../../../structures/issue";
+
 /**
  * List user account issues assigned to the authenticated user.
  * List issues across owned and member repositories assigned to the authenticated user.

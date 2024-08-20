@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { reaction } from "@kakasoo/github-sdk/lib/structures/reaction";
 import typia from "typia";
-
-import { reaction } from "@ORGANIZATION/PROJECT-api/lib/structures/reaction";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_orgs_teams_discussions_comments_reactions_postByOrgAndTeam_slugAndDiscussion_numberAndComment_number(
   connection: api.IConnection,

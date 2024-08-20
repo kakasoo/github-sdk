@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { check_minus_run } from "@kakasoo/github-sdk/lib/structures/check_minus_run";
 import typia from "typia";
-
-import { check_minus_run } from "@ORGANIZATION/PROJECT-api/lib/structures/check_minus_run";
 
 export async function test_api_repos_check_runs_getByOwnerAndRepoAndCheck_run_id(
   connection: api.IConnection,

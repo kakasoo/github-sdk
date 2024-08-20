@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { project } from "@kakasoo/github-sdk/lib/structures/project";
 import typia from "typia";
-
-import { project } from "@ORGANIZATION/PROJECT-api/lib/structures/project";
 
 export async function test_api_projects_getByProject_id(
   connection: api.IConnection,

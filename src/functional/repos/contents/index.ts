@@ -1,15 +1,16 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposContents } from "../../../structures/IApiReposContents";
+import { body } from "../../../structures/body";
 import { content_minus_directory } from "../../../structures/content_minus_directory";
 import { content_minus_file } from "../../../structures/content_minus_file";
-import { content_minus_symlink } from "../../../structures/content_minus_symlink";
 import { content_minus_submodule } from "../../../structures/content_minus_submodule";
-import { body } from "../../../structures/body";
+import { content_minus_symlink } from "../../../structures/content_minus_symlink";
 import { file_minus_commit } from "../../../structures/file_minus_commit";
+
 /**
  * Get repository content.
  * Gets the contents of a file or directory in a repository. Specify the file path or directory with the `path` parameter. If you omit the `path` parameter, you will receive the contents of the repository's root directory.

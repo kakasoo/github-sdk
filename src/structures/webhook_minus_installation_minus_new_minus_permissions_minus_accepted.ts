@@ -1,9 +1,9 @@
 import { enterprise_minus_webhooks } from "./enterprise_minus_webhooks";
 import { installation } from "./installation";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
-import { webhooks_repositories } from "./webhooks_repositories";
 import { repository_minus_webhooks } from "./repository_minus_webhooks";
 import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
+import { webhooks_repositories } from "./webhooks_repositories";
 
 /**
  * @title installation new_permissions_accepted event

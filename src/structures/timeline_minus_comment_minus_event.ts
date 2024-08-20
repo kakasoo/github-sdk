@@ -1,9 +1,9 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
 import { author_minus_association } from "./author_minus_association";
 import { nullable_minus_integration } from "./nullable_minus_integration";
 import { reaction_minus_rollup } from "./reaction_minus_rollup";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * Timeline Comment Event

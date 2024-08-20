@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiAppInstallations } from "../../../structures/IApiAppInstallations";
 import { installation } from "../../../structures/installation";
+
 export * as access_tokens from "./access_tokens";
 export * as suspended from "./suspended";
 /**

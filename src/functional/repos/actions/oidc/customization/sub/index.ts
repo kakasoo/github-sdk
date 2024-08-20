@@ -1,12 +1,13 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsOidcCustomizationSub } from "../../../../../../structures/IApiReposActionsOidcCustomizationSub";
-import { oidc_minus_custom_minus_sub_minus_repo } from "../../../../../../structures/oidc_minus_custom_minus_sub_minus_repo";
 import { body } from "../../../../../../structures/body";
 import { empty_minus_object } from "../../../../../../structures/empty_minus_object";
+import { oidc_minus_custom_minus_sub_minus_repo } from "../../../../../../structures/oidc_minus_custom_minus_sub_minus_repo";
+
 /**
  * Get the customization template for an OIDC subject claim for a repository.
  * Gets the customization template for an OpenID Connect (OIDC) subject claim.

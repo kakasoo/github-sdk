@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { feed } from "@kakasoo/github-sdk/lib/structures/feed";
 import typia from "typia";
-
-import { feed } from "@ORGANIZATION/PROJECT-api/lib/structures/feed";
 
 export async function test_api_feeds_get(connection: api.IConnection) {
   const output: feed = await api.functional.feeds.get(connection);

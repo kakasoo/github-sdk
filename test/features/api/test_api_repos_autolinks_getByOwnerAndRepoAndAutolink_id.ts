@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { autolink } from "@kakasoo/github-sdk/lib/structures/autolink";
 import typia from "typia";
-
-import { autolink } from "@ORGANIZATION/PROJECT-api/lib/structures/autolink";
 
 export async function test_api_repos_autolinks_getByOwnerAndRepoAndAutolink_id(
   connection: api.IConnection,

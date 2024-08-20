@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiAppInstallations } from "@kakasoo/github-sdk/lib/structures/IApiAppInstallations";
+import { installation } from "@kakasoo/github-sdk/lib/structures/installation";
 import typia from "typia";
-
-import { installation } from "@ORGANIZATION/PROJECT-api/lib/structures/installation";
-import { IApiAppInstallations } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiAppInstallations";
 
 export async function test_api_app_installations_get(
   connection: api.IConnection,

@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { author_minus_association } from "./author_minus_association";
+import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 
 /**
  * Pull Request Reviews are reviews on pull requests.

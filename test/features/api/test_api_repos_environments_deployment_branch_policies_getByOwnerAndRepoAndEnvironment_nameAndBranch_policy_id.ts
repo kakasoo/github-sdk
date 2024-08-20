@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { deployment_minus_branch_minus_policy } from "@kakasoo/github-sdk/lib/structures/deployment_minus_branch_minus_policy";
 import typia from "typia";
-
-import { deployment_minus_branch_minus_policy } from "@ORGANIZATION/PROJECT-api/lib/structures/deployment_minus_branch_minus_policy";
 
 export async function test_api_repos_environments_deployment_branch_policies_getByOwnerAndRepoAndEnvironment_nameAndBranch_policy_id(
   connection: api.IConnection,

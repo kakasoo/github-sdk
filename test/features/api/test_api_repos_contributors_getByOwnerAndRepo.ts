@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposContributors } from "@kakasoo/github-sdk/lib/structures/IApiReposContributors";
+import { contributor } from "@kakasoo/github-sdk/lib/structures/contributor";
 import typia from "typia";
-
-import { contributor } from "@ORGANIZATION/PROJECT-api/lib/structures/contributor";
-import { IApiReposContributors } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposContributors";
 
 export async function test_api_repos_contributors_getByOwnerAndRepo(
   connection: api.IConnection,

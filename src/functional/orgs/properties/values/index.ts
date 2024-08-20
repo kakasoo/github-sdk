@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsPropertiesValues } from "../../../../structures/IApiOrgsPropertiesValues";
-import { org_minus_repo_minus_custom_minus_property_minus_values } from "../../../../structures/org_minus_repo_minus_custom_minus_property_minus_values";
 import { body } from "../../../../structures/body";
+import { org_minus_repo_minus_custom_minus_property_minus_values } from "../../../../structures/org_minus_repo_minus_custom_minus_property_minus_values";
+
 /**
  * List custom property values for organization repositories.
  * Lists organization repositories with all of their custom property values.

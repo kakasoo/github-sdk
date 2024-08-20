@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsSecurityManagers } from "../../../structures/IApiOrgsSecurityManagers";
 import { team_minus_simple } from "../../../structures/team_minus_simple";
+
 export * as teams from "./teams";
 /**
  * List security manager teams.

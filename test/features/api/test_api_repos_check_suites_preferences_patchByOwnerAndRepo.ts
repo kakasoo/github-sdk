@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { check_minus_suite_minus_preference } from "@kakasoo/github-sdk/lib/structures/check_minus_suite_minus_preference";
 import typia from "typia";
-
-import { check_minus_suite_minus_preference } from "@ORGANIZATION/PROJECT-api/lib/structures/check_minus_suite_minus_preference";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_check_suites_preferences_patchByOwnerAndRepo(
   connection: api.IConnection,

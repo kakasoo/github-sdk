@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiMarketplaceListingStubbedPlansAccounts } from "@kakasoo/github-sdk/lib/structures/IApiMarketplaceListingStubbedPlansAccounts";
+import { marketplace_minus_purchase } from "@kakasoo/github-sdk/lib/structures/marketplace_minus_purchase";
 import typia from "typia";
-
-import { marketplace_minus_purchase } from "@ORGANIZATION/PROJECT-api/lib/structures/marketplace_minus_purchase";
-import { IApiMarketplaceListingStubbedPlansAccounts } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiMarketplaceListingStubbedPlansAccounts";
 
 export async function test_api_marketplace_listing_stubbed_plans_accounts_getByPlan_id(
   connection: api.IConnection,

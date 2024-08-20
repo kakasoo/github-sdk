@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
+import { repository_minus_advisory_minus_credit } from "./repository_minus_advisory_minus_credit";
 import { repository_minus_advisory_minus_vulnerability } from "./repository_minus_advisory_minus_vulnerability";
 import { security_minus_advisory_minus_credit_minus_types } from "./security_minus_advisory_minus_credit_minus_types";
-import { repository_minus_advisory_minus_credit } from "./repository_minus_advisory_minus_credit";
 import { simple_minus_user } from "./simple_minus_user";
 import { team } from "./team";
 

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { dependabot_minus_alert_minus_with_minus_repository } from "@kakasoo/github-sdk/lib/structures/dependabot_minus_alert_minus_with_minus_repository";
 import typia from "typia";
-
-import { dependabot_minus_alert_minus_with_minus_repository } from "@ORGANIZATION/PROJECT-api/lib/structures/dependabot_minus_alert_minus_with_minus_repository";
 
 export async function test_api_enterprises_dependabot_alerts_getByEnterprise(
   connection: api.IConnection,

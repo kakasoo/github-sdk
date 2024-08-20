@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { oidc_minus_custom_minus_sub } from "@kakasoo/github-sdk/lib/structures/oidc_minus_custom_minus_sub";
 import typia from "typia";
-
-import { oidc_minus_custom_minus_sub } from "@ORGANIZATION/PROJECT-api/lib/structures/oidc_minus_custom_minus_sub";
 
 export async function test_api_orgs_actions_oidc_customization_sub_getByOrg(
   connection: api.IConnection,

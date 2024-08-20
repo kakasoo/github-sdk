@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersSettingsBillingPackages } from "../../../../../structures/IApiUsersSettingsBillingPackages";
 import { packages_minus_billing_minus_usage } from "../../../../../structures/packages_minus_billing_minus_usage";
+
 /**
  * Get GitHub Packages billing for a user.
  * Gets the free and paid storage used for GitHub Packages in gigabytes.

@@ -1,22 +1,22 @@
 import { tags } from "typia";
 
-import { repository_minus_rule_minus_creation } from "./repository_minus_rule_minus_creation";
-import { repository_minus_rule_minus_update } from "./repository_minus_rule_minus_update";
-import { repository_minus_rule_minus_deletion } from "./repository_minus_rule_minus_deletion";
-import { repository_minus_rule_minus_required_minus_linear_minus_history } from "./repository_minus_rule_minus_required_minus_linear_minus_history";
-import { repository_minus_rule_minus_merge_minus_queue } from "./repository_minus_rule_minus_merge_minus_queue";
-import { repository_minus_rule_minus_required_minus_deployments } from "./repository_minus_rule_minus_required_minus_deployments";
-import { repository_minus_rule_minus_required_minus_signatures } from "./repository_minus_rule_minus_required_minus_signatures";
-import { repository_minus_rule_minus_pull_minus_request } from "./repository_minus_rule_minus_pull_minus_request";
-import { repository_minus_rule_minus_required_minus_status_minus_checks } from "./repository_minus_rule_minus_required_minus_status_minus_checks";
-import { repository_minus_rule_minus_non_minus_fast_minus_forward } from "./repository_minus_rule_minus_non_minus_fast_minus_forward";
-import { repository_minus_rule_minus_commit_minus_message_minus_pattern } from "./repository_minus_rule_minus_commit_minus_message_minus_pattern";
-import { repository_minus_rule_minus_commit_minus_author_minus_email_minus_pattern } from "./repository_minus_rule_minus_commit_minus_author_minus_email_minus_pattern";
-import { repository_minus_rule_minus_committer_minus_email_minus_pattern } from "./repository_minus_rule_minus_committer_minus_email_minus_pattern";
 import { repository_minus_rule_minus_branch_minus_name_minus_pattern } from "./repository_minus_rule_minus_branch_minus_name_minus_pattern";
-import { repository_minus_rule_minus_tag_minus_name_minus_pattern } from "./repository_minus_rule_minus_tag_minus_name_minus_pattern";
-import { repository_minus_rule_minus_workflows } from "./repository_minus_rule_minus_workflows";
 import { repository_minus_rule_minus_code_minus_scanning } from "./repository_minus_rule_minus_code_minus_scanning";
+import { repository_minus_rule_minus_commit_minus_author_minus_email_minus_pattern } from "./repository_minus_rule_minus_commit_minus_author_minus_email_minus_pattern";
+import { repository_minus_rule_minus_commit_minus_message_minus_pattern } from "./repository_minus_rule_minus_commit_minus_message_minus_pattern";
+import { repository_minus_rule_minus_committer_minus_email_minus_pattern } from "./repository_minus_rule_minus_committer_minus_email_minus_pattern";
+import { repository_minus_rule_minus_creation } from "./repository_minus_rule_minus_creation";
+import { repository_minus_rule_minus_deletion } from "./repository_minus_rule_minus_deletion";
+import { repository_minus_rule_minus_merge_minus_queue } from "./repository_minus_rule_minus_merge_minus_queue";
+import { repository_minus_rule_minus_non_minus_fast_minus_forward } from "./repository_minus_rule_minus_non_minus_fast_minus_forward";
+import { repository_minus_rule_minus_pull_minus_request } from "./repository_minus_rule_minus_pull_minus_request";
+import { repository_minus_rule_minus_required_minus_deployments } from "./repository_minus_rule_minus_required_minus_deployments";
+import { repository_minus_rule_minus_required_minus_linear_minus_history } from "./repository_minus_rule_minus_required_minus_linear_minus_history";
+import { repository_minus_rule_minus_required_minus_signatures } from "./repository_minus_rule_minus_required_minus_signatures";
+import { repository_minus_rule_minus_required_minus_status_minus_checks } from "./repository_minus_rule_minus_required_minus_status_minus_checks";
+import { repository_minus_rule_minus_tag_minus_name_minus_pattern } from "./repository_minus_rule_minus_tag_minus_name_minus_pattern";
+import { repository_minus_rule_minus_update } from "./repository_minus_rule_minus_update";
+import { repository_minus_rule_minus_workflows } from "./repository_minus_rule_minus_workflows";
 
 /**
  * A repository rule.

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserKeys } from "../../../structures/IApiUserKeys";
-import { key } from "../../../structures/key";
 import { body } from "../../../structures/body";
+import { key } from "../../../structures/key";
+
 /**
  * List public SSH keys for the authenticated user.
  * Lists the public SSH keys for the authenticated user's GitHub account.

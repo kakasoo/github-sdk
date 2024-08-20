@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiUserPublicEmails } from "../../../structures/IApiUserPublicEmails";
 import { email } from "../../../structures/email";
+
 /**
  * List public email addresses for the authenticated user.
  * Lists your publicly visible email address, which you can set with the

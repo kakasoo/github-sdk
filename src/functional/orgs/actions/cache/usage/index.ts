@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsActionsCacheUsage } from "../../../../../structures/IApiOrgsActionsCacheUsage";
 import { actions_minus_cache_minus_usage_minus_org_minus_enterprise } from "../../../../../structures/actions_minus_cache_minus_usage_minus_org_minus_enterprise";
+
 /**
  * Get GitHub Actions cache usage for an organization.
  * Gets the total GitHub Actions cache usage for an organization.

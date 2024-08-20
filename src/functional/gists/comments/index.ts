@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiGistsComments } from "../../../structures/IApiGistsComments";
-import { gist_minus_comment } from "../../../structures/gist_minus_comment";
 import { body } from "../../../structures/body";
+import { gist_minus_comment } from "../../../structures/gist_minus_comment";
+
 /**
  * List gist comments.
  * Lists the comments on a gist.

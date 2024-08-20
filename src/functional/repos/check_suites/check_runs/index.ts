@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCheckSuitesCheckRuns } from "../../../../structures/IApiReposCheckSuitesCheckRuns";
 import { response } from "../../../../structures/response";
+
 /**
  * List check runs in a check suite.
  * Lists check runs for a check suite using its `id`.

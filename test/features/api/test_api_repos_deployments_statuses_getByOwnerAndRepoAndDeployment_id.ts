@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { deployment_minus_status } from "@kakasoo/github-sdk/lib/structures/deployment_minus_status";
 import typia from "typia";
-
-import { deployment_minus_status } from "@ORGANIZATION/PROJECT-api/lib/structures/deployment_minus_status";
 
 export async function test_api_repos_deployments_statuses_getByOwnerAndRepoAndDeployment_id(
   connection: api.IConnection,

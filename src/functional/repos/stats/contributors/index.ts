@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposStatsContributors } from "../../../../structures/IApiReposStatsContributors";
 import { contributor_minus_activity } from "../../../../structures/contributor_minus_activity";
+
 /**
  * Get all contributor commit activity.
  *

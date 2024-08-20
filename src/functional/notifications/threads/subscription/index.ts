@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiNotificationsThreadsSubscription } from "../../../../structures/IApiNotificationsThreadsSubscription";
-import { thread_minus_subscription } from "../../../../structures/thread_minus_subscription";
 import { body } from "../../../../structures/body";
+import { thread_minus_subscription } from "../../../../structures/thread_minus_subscription";
+
 /**
  * Get a thread subscription for the authenticated user.
  * This checks to see if the current user is subscribed to a thread. You can also [get a repository subscription](https://docs.github.com/rest/activity/watching#get-a-repository-subscription).

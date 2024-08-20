@@ -1,9 +1,9 @@
-import { webhooks_changes_8 } from "./webhooks_changes_8";
 import { enterprise_minus_webhooks } from "./enterprise_minus_webhooks";
-import { simple_minus_installation } from "./simple_minus_installation";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
 import { repository_minus_webhooks } from "./repository_minus_webhooks";
+import { simple_minus_installation } from "./simple_minus_installation";
 import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
+import { webhooks_changes_8 } from "./webhooks_changes_8";
 import { webhooks_sponsorship } from "./webhooks_sponsorship";
 
 /**

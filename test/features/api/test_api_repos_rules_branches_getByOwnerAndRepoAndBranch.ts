@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { repository_minus_rule_minus_detailed } from "@kakasoo/github-sdk/lib/structures/repository_minus_rule_minus_detailed";
 import typia from "typia";
-
-import { repository_minus_rule_minus_detailed } from "@ORGANIZATION/PROJECT-api/lib/structures/repository_minus_rule_minus_detailed";
 
 export async function test_api_repos_rules_branches_getByOwnerAndRepoAndBranch(
   connection: api.IConnection,

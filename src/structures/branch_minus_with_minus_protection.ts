@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { commit } from "./commit";
 import { branch_minus_protection } from "./branch_minus_protection";
+import { commit } from "./commit";
 
 /**
  * Branch With Protection

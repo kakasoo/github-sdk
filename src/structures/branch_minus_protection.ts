@@ -1,9 +1,9 @@
 import { tags } from "typia";
 
-import { protected_minus_branch_minus_required_minus_status_minus_check } from "./protected_minus_branch_minus_required_minus_status_minus_check";
+import { branch_minus_restriction_minus_policy } from "./branch_minus_restriction_minus_policy";
 import { protected_minus_branch_minus_admin_minus_enforced } from "./protected_minus_branch_minus_admin_minus_enforced";
 import { protected_minus_branch_minus_pull_minus_request_minus_review } from "./protected_minus_branch_minus_pull_minus_request_minus_review";
-import { branch_minus_restriction_minus_policy } from "./branch_minus_restriction_minus_policy";
+import { protected_minus_branch_minus_required_minus_status_minus_check } from "./protected_minus_branch_minus_required_minus_status_minus_check";
 
 /**
  * Branch Protection

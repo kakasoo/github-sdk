@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { code_minus_frequency_minus_stat } from "@kakasoo/github-sdk/lib/structures/code_minus_frequency_minus_stat";
 import typia from "typia";
-
-import { code_minus_frequency_minus_stat } from "@ORGANIZATION/PROJECT-api/lib/structures/code_minus_frequency_minus_stat";
 
 export async function test_api_repos_stats_code_frequency_getByOwnerAndRepo(
   connection: api.IConnection,

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { gist_minus_comment } from "@kakasoo/github-sdk/lib/structures/gist_minus_comment";
 import typia from "typia";
-
-import { gist_minus_comment } from "@ORGANIZATION/PROJECT-api/lib/structures/gist_minus_comment";
 
 export async function test_api_gists_comments_getByGist_id(
   connection: api.IConnection,

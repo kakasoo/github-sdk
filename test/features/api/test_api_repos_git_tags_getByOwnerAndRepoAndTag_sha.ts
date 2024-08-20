@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { git_minus_tag } from "@kakasoo/github-sdk/lib/structures/git_minus_tag";
 import typia from "typia";
-
-import { git_minus_tag } from "@ORGANIZATION/PROJECT-api/lib/structures/git_minus_tag";
 
 export async function test_api_repos_git_tags_getByOwnerAndRepoAndTag_sha(
   connection: api.IConnection,

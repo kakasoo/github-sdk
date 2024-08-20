@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { license } from "@kakasoo/github-sdk/lib/structures/license";
 import typia from "typia";
-
-import { license } from "@ORGANIZATION/PROJECT-api/lib/structures/license";
 
 export async function test_api_licenses_getByLicense(
   connection: api.IConnection,

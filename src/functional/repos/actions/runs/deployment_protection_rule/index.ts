@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsRunsDeploymentProtectionRule } from "../../../../../structures/IApiReposActionsRunsDeploymentProtectionRule";
 import { review_minus_custom_minus_gates_minus_comment_minus_required } from "../../../../../structures/review_minus_custom_minus_gates_minus_comment_minus_required";
 import { review_minus_custom_minus_gates_minus_state_minus_required } from "../../../../../structures/review_minus_custom_minus_gates_minus_state_minus_required";
+
 /**
  * Review custom deployment protection rules for a workflow run.
  * Approve or reject custom deployment protection rules provided by a GitHub App for a workflow run. For more information, see "[Using environments for deployment](https://docs.github.com/actions/deployment/targeting-different-environments/using-environments-for-deployment)."

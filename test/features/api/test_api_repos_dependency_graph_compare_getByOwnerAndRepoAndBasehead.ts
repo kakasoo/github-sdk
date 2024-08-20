@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { dependency_minus_graph_minus_diff } from "@kakasoo/github-sdk/lib/structures/dependency_minus_graph_minus_diff";
 import typia from "typia";
-
-import { dependency_minus_graph_minus_diff } from "@ORGANIZATION/PROJECT-api/lib/structures/dependency_minus_graph_minus_diff";
 
 export async function test_api_repos_dependency_graph_compare_getByOwnerAndRepoAndBasehead(
   connection: api.IConnection,

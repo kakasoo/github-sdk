@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsPublicMembers } from "../../../structures/IApiOrgsPublicMembers";
 import { simple_minus_user } from "../../../structures/simple_minus_user";
+
 /**
  * List public organization members.
  * Members of an organization can choose to have their membership publicized or not.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { topic } from "@kakasoo/github-sdk/lib/structures/topic";
 import typia from "typia";
-
-import { topic } from "@ORGANIZATION/PROJECT-api/lib/structures/topic";
 
 export async function test_api_repos_topics_getByOwnerAndRepo(
   connection: api.IConnection,

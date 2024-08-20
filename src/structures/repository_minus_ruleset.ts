@@ -1,10 +1,10 @@
 import { tags } from "typia";
 
+import { org_minus_ruleset_minus_conditions } from "./org_minus_ruleset_minus_conditions";
+import { repository_minus_rule } from "./repository_minus_rule";
 import { repository_minus_rule_minus_enforcement } from "./repository_minus_rule_minus_enforcement";
 import { repository_minus_ruleset_minus_bypass_minus_actor } from "./repository_minus_ruleset_minus_bypass_minus_actor";
 import { repository_minus_ruleset_minus_conditions } from "./repository_minus_ruleset_minus_conditions";
-import { org_minus_ruleset_minus_conditions } from "./org_minus_ruleset_minus_conditions";
-import { repository_minus_rule } from "./repository_minus_rule";
 
 /**
  * A set of rules to apply when specified conditions are met.

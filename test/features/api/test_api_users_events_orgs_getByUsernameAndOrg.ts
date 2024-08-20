@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { event } from "@kakasoo/github-sdk/lib/structures/event";
 import typia from "typia";
-
-import { event } from "@ORGANIZATION/PROJECT-api/lib/structures/event";
 
 export async function test_api_users_events_orgs_getByUsernameAndOrg(
   connection: api.IConnection,

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { base_minus_gist } from "@kakasoo/github-sdk/lib/structures/base_minus_gist";
 import typia from "typia";
-
-import { base_minus_gist } from "@ORGANIZATION/PROJECT-api/lib/structures/base_minus_gist";
 
 export async function test_api_users_gists_getByUsername(
   connection: api.IConnection,

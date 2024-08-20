@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposPulls } from "@kakasoo/github-sdk/lib/structures/IApiReposPulls";
+import { pull_minus_request_minus_simple } from "@kakasoo/github-sdk/lib/structures/pull_minus_request_minus_simple";
 import typia from "typia";
-
-import { pull_minus_request_minus_simple } from "@ORGANIZATION/PROJECT-api/lib/structures/pull_minus_request_minus_simple";
-import { IApiReposPulls } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposPulls";
 
 export async function test_api_repos_pulls_getByOwnerAndRepo(
   connection: api.IConnection,

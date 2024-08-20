@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { team_minus_simple } from "@kakasoo/github-sdk/lib/structures/team_minus_simple";
 import typia from "typia";
-
-import { team_minus_simple } from "@ORGANIZATION/PROJECT-api/lib/structures/team_minus_simple";
 
 export async function test_api_orgs_security_managers_getByOrg(
   connection: api.IConnection,

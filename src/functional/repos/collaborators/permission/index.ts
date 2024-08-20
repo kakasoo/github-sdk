@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCollaboratorsPermission } from "../../../../structures/IApiReposCollaboratorsPermission";
 import { repository_minus_collaborator_minus_permission } from "../../../../structures/repository_minus_collaborator_minus_permission";
+
 /**
  * Get repository permissions for a user.
  * Checks the repository permission of a collaborator. The possible repository

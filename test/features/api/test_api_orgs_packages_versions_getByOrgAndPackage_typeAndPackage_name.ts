@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsPackagesVersions } from "@kakasoo/github-sdk/lib/structures/IApiOrgsPackagesVersions";
+import { package_minus_version } from "@kakasoo/github-sdk/lib/structures/package_minus_version";
 import typia from "typia";
-
-import { package_minus_version } from "@ORGANIZATION/PROJECT-api/lib/structures/package_minus_version";
-import { IApiOrgsPackagesVersions } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsPackagesVersions";
 
 export async function test_api_orgs_packages_versions_getByOrgAndPackage_typeAndPackage_name(
   connection: api.IConnection,

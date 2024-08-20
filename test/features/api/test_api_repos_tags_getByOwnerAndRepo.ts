@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { tag } from "@kakasoo/github-sdk/lib/structures/tag";
 import typia from "typia";
-
-import { tag } from "@ORGANIZATION/PROJECT-api/lib/structures/tag";
 
 export async function test_api_repos_tags_getByOwnerAndRepo(
   connection: api.IConnection,

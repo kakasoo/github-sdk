@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { gitignore_minus_template } from "@kakasoo/github-sdk/lib/structures/gitignore_minus_template";
 import typia from "typia";
-
-import { gitignore_minus_template } from "@ORGANIZATION/PROJECT-api/lib/structures/gitignore_minus_template";
 
 export async function test_api_gitignore_templates_getByName(
   connection: api.IConnection,

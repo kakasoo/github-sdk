@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
-import typia, { tags } from "typia";
-import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
 import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
+import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
+import typia, { tags } from "typia";
 
 import { IApiReposCodeScanningCodeqlVariantAnalysesRepos } from "../../../../../../structures/IApiReposCodeScanningCodeqlVariantAnalysesRepos";
 import { code_minus_scanning_minus_variant_minus_analysis_minus_repo_minus_task } from "../../../../../../structures/code_minus_scanning_minus_variant_minus_analysis_minus_repo_minus_task";
+
 /**
  * Get the analysis status of a repository in a CodeQL variant analysis.
  * Gets the analysis status of a repository in a CodeQL variant analysis.

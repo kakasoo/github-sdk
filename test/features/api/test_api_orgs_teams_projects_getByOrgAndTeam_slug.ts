@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { team_minus_project } from "@kakasoo/github-sdk/lib/structures/team_minus_project";
 import typia from "typia";
-
-import { team_minus_project } from "@ORGANIZATION/PROJECT-api/lib/structures/team_minus_project";
 
 export async function test_api_orgs_teams_projects_getByOrgAndTeam_slug(
   connection: api.IConnection,

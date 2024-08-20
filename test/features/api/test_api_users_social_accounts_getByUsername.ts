@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { social_minus_account } from "@kakasoo/github-sdk/lib/structures/social_minus_account";
 import typia from "typia";
-
-import { social_minus_account } from "@ORGANIZATION/PROJECT-api/lib/structures/social_minus_account";
 
 export async function test_api_users_social_accounts_getByUsername(
   connection: api.IConnection,

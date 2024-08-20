@@ -1,11 +1,11 @@
 import { tags } from "typia";
 
 import { enterprise_minus_webhooks } from "./enterprise_minus_webhooks";
-import { simple_minus_installation } from "./simple_minus_installation";
-import { webhooks_user } from "./webhooks_user";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
 import { repository_minus_webhooks } from "./repository_minus_webhooks";
+import { simple_minus_installation } from "./simple_minus_installation";
 import { webhooks_team } from "./webhooks_team";
+import { webhooks_user } from "./webhooks_user";
 
 /**
  * @title membership added event

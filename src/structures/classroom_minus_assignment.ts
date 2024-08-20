@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { simple_minus_classroom_minus_repository } from "./simple_minus_classroom_minus_repository";
 import { classroom } from "./classroom";
+import { simple_minus_classroom_minus_repository } from "./simple_minus_classroom_minus_repository";
 
 /**
  * A GitHub Classroom assignment

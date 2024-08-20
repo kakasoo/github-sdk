@@ -1,9 +1,10 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposSecurityAdvisoriesForks } from "../../../../structures/IApiReposSecurityAdvisoriesForks";
+
 /**
  * Create a temporary private fork to collaborate on fixing a security vulnerability in your repository.
  *

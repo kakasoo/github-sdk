@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiClassrooms } from "../../structures/IApiClassrooms";
-import { simple_minus_classroom } from "../../structures/simple_minus_classroom";
 import { classroom } from "../../structures/classroom";
+import { simple_minus_classroom } from "../../structures/simple_minus_classroom";
+
 export * as assignments from "./assignments";
 /**
  * List classrooms.

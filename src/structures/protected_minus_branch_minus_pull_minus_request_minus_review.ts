@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
+import { integration } from "./integration";
 import { simple_minus_user } from "./simple_minus_user";
 import { team } from "./team";
-import { integration } from "./integration";
 
 /**
  * Protected Branch Pull Request Review

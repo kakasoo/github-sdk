@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { thread_minus_subscription } from "@kakasoo/github-sdk/lib/structures/thread_minus_subscription";
 import typia from "typia";
-
-import { thread_minus_subscription } from "@ORGANIZATION/PROJECT-api/lib/structures/thread_minus_subscription";
 
 export async function test_api_notifications_threads_subscription_getByThread_id(
   connection: api.IConnection,

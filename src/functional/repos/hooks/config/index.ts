@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposHooksConfig } from "../../../../structures/IApiReposHooksConfig";
-import { webhook_minus_config } from "../../../../structures/webhook_minus_config";
 import { body } from "../../../../structures/body";
+import { webhook_minus_config } from "../../../../structures/webhook_minus_config";
+
 /**
  * Get a webhook configuration for a repository.
  * Returns the webhook configuration for a repository. To get more information about the webhook, including the `active` state and `events`, use "[Get a repository webhook](/rest/webhooks/repos#get-a-repository-webhook)."

@@ -1,12 +1,13 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeScanningDefaultSetup } from "../../../../structures/IApiReposCodeScanningDefaultSetup";
 import { code_minus_scanning_minus_default_minus_setup } from "../../../../structures/code_minus_scanning_minus_default_minus_setup";
 import { code_minus_scanning_minus_default_minus_setup_minus_update } from "../../../../structures/code_minus_scanning_minus_default_minus_setup_minus_update";
 import { empty_minus_object } from "../../../../structures/empty_minus_object";
+
 /**
  * Get a code scanning default setup configuration.
  * Gets a code scanning default setup configuration.

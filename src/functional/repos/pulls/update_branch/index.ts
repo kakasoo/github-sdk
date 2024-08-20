@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsUpdateBranch } from "../../../../structures/IApiReposPullsUpdateBranch";
 import { body } from "../../../../structures/body";
+
 /**
  * Update a pull request branch.
  * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.

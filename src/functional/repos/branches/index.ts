@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposBranches } from "../../../structures/IApiReposBranches";
-import { short_minus_branch } from "../../../structures/short_minus_branch";
 import { branch_minus_with_minus_protection } from "../../../structures/branch_minus_with_minus_protection";
+import { short_minus_branch } from "../../../structures/short_minus_branch";
+
 export * as protection from "./protection";
 export * as rename from "./rename";
 /**

@@ -1,13 +1,13 @@
 import { tags } from "typia";
 
-import { alert_minus_number } from "./alert_minus_number";
 import { alert_minus_created_minus_at } from "./alert_minus_created_minus_at";
-import { nullable_minus_alert_minus_updated_minus_at } from "./nullable_minus_alert_minus_updated_minus_at";
-import { alert_minus_url } from "./alert_minus_url";
 import { alert_minus_html_minus_url } from "./alert_minus_html_minus_url";
-import { secret_minus_scanning_minus_alert_minus_state } from "./secret_minus_scanning_minus_alert_minus_state";
-import { secret_minus_scanning_minus_alert_minus_resolution } from "./secret_minus_scanning_minus_alert_minus_resolution";
+import { alert_minus_number } from "./alert_minus_number";
+import { alert_minus_url } from "./alert_minus_url";
+import { nullable_minus_alert_minus_updated_minus_at } from "./nullable_minus_alert_minus_updated_minus_at";
 import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
+import { secret_minus_scanning_minus_alert_minus_resolution } from "./secret_minus_scanning_minus_alert_minus_resolution";
+import { secret_minus_scanning_minus_alert_minus_state } from "./secret_minus_scanning_minus_alert_minus_state";
 
 export type secret_minus_scanning_minus_alert = {
   number?: alert_minus_number;

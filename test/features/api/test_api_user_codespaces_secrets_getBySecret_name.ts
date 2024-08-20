@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { codespaces_minus_secret } from "@kakasoo/github-sdk/lib/structures/codespaces_minus_secret";
 import typia from "typia";
-
-import { codespaces_minus_secret } from "@ORGANIZATION/PROJECT-api/lib/structures/codespaces_minus_secret";
 
 export async function test_api_user_codespaces_secrets_getBySecret_name(
   connection: api.IConnection,

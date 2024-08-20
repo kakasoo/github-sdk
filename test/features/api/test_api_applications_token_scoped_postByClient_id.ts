@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { authorization } from "@kakasoo/github-sdk/lib/structures/authorization";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
 import typia from "typia";
-
-import { authorization } from "@ORGANIZATION/PROJECT-api/lib/structures/authorization";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_applications_token_scoped_postByClient_id(
   connection: api.IConnection,

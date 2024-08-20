@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { ssh_minus_signing_minus_key } from "@kakasoo/github-sdk/lib/structures/ssh_minus_signing_minus_key";
 import typia from "typia";
-
-import { ssh_minus_signing_minus_key } from "@ORGANIZATION/PROJECT-api/lib/structures/ssh_minus_signing_minus_key";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_user_ssh_signing_keys_post(
   connection: api.IConnection,

@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { release_minus_asset } from "@kakasoo/github-sdk/lib/structures/release_minus_asset";
 import typia from "typia";
-
-import { release_minus_asset } from "@ORGANIZATION/PROJECT-api/lib/structures/release_minus_asset";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_releases_assets_patchByOwnerAndRepoAndAsset_id(
   connection: api.IConnection,

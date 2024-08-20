@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsPermissionsWorkflow } from "../../../../../structures/IApiReposActionsPermissionsWorkflow";
 import { actions_minus_get_minus_default_minus_workflow_minus_permissions } from "../../../../../structures/actions_minus_get_minus_default_minus_workflow_minus_permissions";
 import { actions_minus_set_minus_default_minus_workflow_minus_permissions } from "../../../../../structures/actions_minus_set_minus_default_minus_workflow_minus_permissions";
+
 /**
  * Get default workflow permissions for a repository.
  * Gets the default workflow permissions granted to the `GITHUB_TOKEN` when running workflows in a repository,

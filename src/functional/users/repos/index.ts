@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersRepos } from "../../../structures/IApiUsersRepos";
 import { minimal_minus_repository } from "../../../structures/minimal_minus_repository";
+
 /**
  * List repositories for a user.
  * Lists public repositories for the specified user.

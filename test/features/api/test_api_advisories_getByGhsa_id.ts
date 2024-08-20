@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { global_minus_advisory } from "@kakasoo/github-sdk/lib/structures/global_minus_advisory";
 import typia from "typia";
-
-import { global_minus_advisory } from "@ORGANIZATION/PROJECT-api/lib/structures/global_minus_advisory";
 
 export async function test_api_advisories_getByGhsa_id(
   connection: api.IConnection,

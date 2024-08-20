@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { rule_minus_suites } from "@kakasoo/github-sdk/lib/structures/rule_minus_suites";
 import typia from "typia";
-
-import { rule_minus_suites } from "@ORGANIZATION/PROJECT-api/lib/structures/rule_minus_suites";
 
 export async function test_api_repos_rulesets_rule_suites_getByOwnerAndRepo(
   connection: api.IConnection,

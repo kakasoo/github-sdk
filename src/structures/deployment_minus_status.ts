@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { nullable_minus_integration } from "./nullable_minus_integration";
+import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 
 /**
  * The status of a deployment.

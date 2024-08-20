@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposEnvironmentsDeploymentProtectionRulesApps } from "../../../../../structures/IApiReposEnvironmentsDeploymentProtectionRulesApps";
 import { response } from "../../../../../structures/response";
+
 /**
  * List custom deployment rule integrations available for an environment.
  * Gets all custom deployment protection rule integrations that are available for an environment.

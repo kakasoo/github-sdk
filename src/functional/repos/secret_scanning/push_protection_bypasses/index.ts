@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposSecretScanningPushProtectionBypasses } from "../../../../structures/IApiReposSecretScanningPushProtectionBypasses";
 import { body } from "../../../../structures/body";
 import { secret_minus_scanning_minus_push_minus_protection_minus_bypass } from "../../../../structures/secret_minus_scanning_minus_push_minus_protection_minus_bypass";
+
 /**
  * Create a push protection bypass.
  * Creates a bypass for a previously push protected secret.

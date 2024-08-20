@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiAppInstallationRequests } from "../../../structures/IApiAppInstallationRequests";
 import { integration_minus_installation_minus_request } from "../../../structures/integration_minus_installation_minus_request";
+
 /**
  * List installation requests for the authenticated app.
  * Lists all the pending installation requests for the authenticated GitHub App.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { installation } from "@kakasoo/github-sdk/lib/structures/installation";
 import typia from "typia";
-
-import { installation } from "@ORGANIZATION/PROJECT-api/lib/structures/installation";
 
 export async function test_api_users_installation_getByUsername(
   connection: api.IConnection,

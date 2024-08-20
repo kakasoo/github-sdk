@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { porter_minus_author } from "@kakasoo/github-sdk/lib/structures/porter_minus_author";
 import typia, { tags } from "typia";
-
-import { porter_minus_author } from "@ORGANIZATION/PROJECT-api/lib/structures/porter_minus_author";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos__import_authors_patchByOwnerAndRepoAndAuthor_id(
   connection: api.IConnection,

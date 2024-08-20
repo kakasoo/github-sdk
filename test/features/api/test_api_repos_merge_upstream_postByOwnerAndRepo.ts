@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { merged_minus_upstream } from "@kakasoo/github-sdk/lib/structures/merged_minus_upstream";
 import typia from "typia";
-
-import { merged_minus_upstream } from "@ORGANIZATION/PROJECT-api/lib/structures/merged_minus_upstream";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_merge_upstream_postByOwnerAndRepo(
   connection: api.IConnection,

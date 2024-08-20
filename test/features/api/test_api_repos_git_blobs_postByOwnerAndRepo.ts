@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { short_minus_blob } from "@kakasoo/github-sdk/lib/structures/short_minus_blob";
 import typia from "typia";
-
-import { short_minus_blob } from "@ORGANIZATION/PROJECT-api/lib/structures/short_minus_blob";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_git_blobs_postByOwnerAndRepo(
   connection: api.IConnection,

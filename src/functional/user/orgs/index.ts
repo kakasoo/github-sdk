@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiUserOrgs } from "../../../structures/IApiUserOrgs";
 import { organization_minus_simple } from "../../../structures/organization_minus_simple";
+
 /**
  * List organizations for the authenticated user.
  *

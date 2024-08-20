@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiApplicationsToken } from "../../../structures/IApiApplicationsToken";
-import { body } from "../../../structures/body";
 import { authorization } from "../../../structures/authorization";
+import { body } from "../../../structures/body";
+
 export * as scoped from "./scoped";
 /**
  * Check a token.

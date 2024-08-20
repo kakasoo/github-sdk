@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsMerge } from "../../../../structures/IApiReposPullsMerge";
 import { body } from "../../../../structures/body";
 import { pull_minus_request_minus_merge_minus_result } from "../../../../structures/pull_minus_request_minus_merge_minus_result";
+
 /**
  * Check if a pull request has been merged.
  * Checks if a pull request has been merged into the base branch. The HTTP status of the response indicates whether or not the pull request has been merged; the response body is empty.

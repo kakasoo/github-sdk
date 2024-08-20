@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { team_minus_full } from "@kakasoo/github-sdk/lib/structures/team_minus_full";
 import typia from "typia";
-
-import { team_minus_full } from "@ORGANIZATION/PROJECT-api/lib/structures/team_minus_full";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_orgs_teams_postByOrg(
   connection: api.IConnection,

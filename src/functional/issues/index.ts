@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiIssues } from "../../structures/IApiIssues";
 import { issue } from "../../structures/issue";
+
 /**
  * List issues assigned to the authenticated user across all visible repositories including owned repositories, member
  * repositories, and organization repositories. You can use the `filter` query parameter to fetch issues that are not

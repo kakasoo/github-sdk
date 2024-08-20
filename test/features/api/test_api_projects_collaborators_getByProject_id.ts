@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiProjectsCollaborators } from "@kakasoo/github-sdk/lib/structures/IApiProjectsCollaborators";
+import { simple_minus_user } from "@kakasoo/github-sdk/lib/structures/simple_minus_user";
 import typia from "typia";
-
-import { simple_minus_user } from "@ORGANIZATION/PROJECT-api/lib/structures/simple_minus_user";
-import { IApiProjectsCollaborators } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiProjectsCollaborators";
 
 export async function test_api_projects_collaborators_getByProject_id(
   connection: api.IConnection,

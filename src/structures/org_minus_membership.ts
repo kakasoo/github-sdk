@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { organization_minus_simple } from "./organization_minus_simple";
 import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
+import { organization_minus_simple } from "./organization_minus_simple";
 
 /**
  * Org Membership

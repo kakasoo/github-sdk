@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposIssuesTimeline } from "../../../../structures/IApiReposIssuesTimeline";
 import { timeline_minus_issue_minus_events } from "../../../../structures/timeline_minus_issue_minus_events";
+
 /**
  * List timeline events for an issue.
  * List all timeline events for an issue.

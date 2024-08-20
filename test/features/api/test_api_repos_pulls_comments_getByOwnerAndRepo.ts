@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposPullsComments } from "@kakasoo/github-sdk/lib/structures/IApiReposPullsComments";
+import { pull_minus_request_minus_review_minus_comment } from "@kakasoo/github-sdk/lib/structures/pull_minus_request_minus_review_minus_comment";
 import typia from "typia";
-
-import { pull_minus_request_minus_review_minus_comment } from "@ORGANIZATION/PROJECT-api/lib/structures/pull_minus_request_minus_review_minus_comment";
-import { IApiReposPullsComments } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposPullsComments";
 
 export async function test_api_repos_pulls_comments_getByOwnerAndRepo(
   connection: api.IConnection,

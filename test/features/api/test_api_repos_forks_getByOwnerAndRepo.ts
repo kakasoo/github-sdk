@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposForks } from "@kakasoo/github-sdk/lib/structures/IApiReposForks";
+import { minimal_minus_repository } from "@kakasoo/github-sdk/lib/structures/minimal_minus_repository";
 import typia from "typia";
-
-import { minimal_minus_repository } from "@ORGANIZATION/PROJECT-api/lib/structures/minimal_minus_repository";
-import { IApiReposForks } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposForks";
 
 export async function test_api_repos_forks_getByOwnerAndRepo(
   connection: api.IConnection,

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { actions_minus_variable } from "@kakasoo/github-sdk/lib/structures/actions_minus_variable";
 import typia from "typia";
-
-import { actions_minus_variable } from "@ORGANIZATION/PROJECT-api/lib/structures/actions_minus_variable";
 
 export async function test_api_repos_actions_variables_getByOwnerAndRepoAndName(
   connection: api.IConnection,

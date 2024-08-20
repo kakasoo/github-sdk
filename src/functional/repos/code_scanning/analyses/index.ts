@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia, { tags } from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeScanningAnalyses } from "../../../../structures/IApiReposCodeScanningAnalyses";
 import { code_minus_scanning_minus_analysis } from "../../../../structures/code_minus_scanning_minus_analysis";
 import { code_minus_scanning_minus_analysis_minus_deletion } from "../../../../structures/code_minus_scanning_minus_analysis_minus_deletion";
+
 /**
  * List code scanning analyses for a repository.
  * Lists the details of all code scanning analyses for a repository,

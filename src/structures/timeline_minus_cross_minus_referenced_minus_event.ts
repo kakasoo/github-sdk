@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
 import { issue } from "./issue";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * Timeline Cross Referenced Event

@@ -1,12 +1,13 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsRequestedReviewers } from "../../../../structures/IApiReposPullsRequestedReviewers";
+import { body } from "../../../../structures/body";
 import { pull_minus_request_minus_review_minus_request } from "../../../../structures/pull_minus_request_minus_review_minus_request";
 import { pull_minus_request_minus_simple } from "../../../../structures/pull_minus_request_minus_simple";
-import { body } from "../../../../structures/body";
+
 /**
  * Get all requested reviewers for a pull request.
  * Gets the users or teams whose review is requested for a pull request. Once a requested reviewer submits a review, they are no longer considered a requested reviewer. Their review will instead be returned by the [List reviews for a pull request](https://docs.github.com/rest/pulls/reviews#list-reviews-for-a-pull-request) operation.

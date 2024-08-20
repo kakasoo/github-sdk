@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsTeamsDiscussionsReactions } from "@kakasoo/github-sdk/lib/structures/IApiOrgsTeamsDiscussionsReactions";
+import { reaction } from "@kakasoo/github-sdk/lib/structures/reaction";
 import typia from "typia";
-
-import { reaction } from "@ORGANIZATION/PROJECT-api/lib/structures/reaction";
-import { IApiOrgsTeamsDiscussionsReactions } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsTeamsDiscussionsReactions";
 
 export async function test_api_orgs_teams_discussions_reactions_getByOrgAndTeam_slugAndDiscussion_number(
   connection: api.IConnection,

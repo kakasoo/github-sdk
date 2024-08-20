@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { project_minus_collaborator_minus_permission } from "@kakasoo/github-sdk/lib/structures/project_minus_collaborator_minus_permission";
 import typia from "typia";
-
-import { project_minus_collaborator_minus_permission } from "@ORGANIZATION/PROJECT-api/lib/structures/project_minus_collaborator_minus_permission";
 
 export async function test_api_projects_collaborators_permission_getByProject_idAndUsername(
   connection: api.IConnection,

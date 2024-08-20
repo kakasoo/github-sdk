@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsCopilotUsage } from "@kakasoo/github-sdk/lib/structures/IApiOrgsCopilotUsage";
+import { copilot_minus_usage_minus_metrics } from "@kakasoo/github-sdk/lib/structures/copilot_minus_usage_minus_metrics";
 import typia from "typia";
-
-import { copilot_minus_usage_minus_metrics } from "@ORGANIZATION/PROJECT-api/lib/structures/copilot_minus_usage_minus_metrics";
-import { IApiOrgsCopilotUsage } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsCopilotUsage";
 
 export async function test_api_orgs_copilot_usage_getByOrg(
   connection: api.IConnection,

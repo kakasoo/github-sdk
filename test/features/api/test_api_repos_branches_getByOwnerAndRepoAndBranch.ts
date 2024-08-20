@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { branch_minus_with_minus_protection } from "@kakasoo/github-sdk/lib/structures/branch_minus_with_minus_protection";
 import typia from "typia";
-
-import { branch_minus_with_minus_protection } from "@ORGANIZATION/PROJECT-api/lib/structures/branch_minus_with_minus_protection";
 
 export async function test_api_repos_branches_getByOwnerAndRepoAndBranch(
   connection: api.IConnection,

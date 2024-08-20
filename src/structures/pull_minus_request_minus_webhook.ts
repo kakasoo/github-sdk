@@ -1,13 +1,13 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
-import { nullable_minus_milestone } from "./nullable_minus_milestone";
-import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
-import { team_minus_simple } from "./team_minus_simple";
-import { nullable_minus_license_minus_simple } from "./nullable_minus_license_minus_simple";
-import { link } from "./link";
 import { author_minus_association } from "./author_minus_association";
 import { auto_minus_merge } from "./auto_minus_merge";
+import { link } from "./link";
+import { nullable_minus_license_minus_simple } from "./nullable_minus_license_minus_simple";
+import { nullable_minus_milestone } from "./nullable_minus_milestone";
+import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
+import { simple_minus_user } from "./simple_minus_user";
+import { team_minus_simple } from "./team_minus_simple";
 
 export type pull_minus_request_minus_webhook = {
   url?: string &

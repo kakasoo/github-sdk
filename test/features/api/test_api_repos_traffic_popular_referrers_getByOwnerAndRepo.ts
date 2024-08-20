@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { referrer_minus_traffic } from "@kakasoo/github-sdk/lib/structures/referrer_minus_traffic";
 import typia from "typia";
-
-import { referrer_minus_traffic } from "@ORGANIZATION/PROJECT-api/lib/structures/referrer_minus_traffic";
 
 export async function test_api_repos_traffic_popular_referrers_getByOwnerAndRepo(
   connection: api.IConnection,

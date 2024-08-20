@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiGistsForks } from "../../../structures/IApiGistsForks";
-import { gist_minus_simple } from "../../../structures/gist_minus_simple";
 import { base_minus_gist } from "../../../structures/base_minus_gist";
+import { gist_minus_simple } from "../../../structures/gist_minus_simple";
+
 /**
  * @tag gists
  * @path gists/:gist_id/forks

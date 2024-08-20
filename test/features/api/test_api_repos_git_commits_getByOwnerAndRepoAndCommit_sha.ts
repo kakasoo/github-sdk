@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { git_minus_commit } from "@kakasoo/github-sdk/lib/structures/git_minus_commit";
 import typia from "typia";
-
-import { git_minus_commit } from "@ORGANIZATION/PROJECT-api/lib/structures/git_minus_commit";
 
 export async function test_api_repos_git_commits_getByOwnerAndRepoAndCommit_sha(
   connection: api.IConnection,

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { timeline_minus_issue_minus_events } from "@kakasoo/github-sdk/lib/structures/timeline_minus_issue_minus_events";
 import typia from "typia";
-
-import { timeline_minus_issue_minus_events } from "@ORGANIZATION/PROJECT-api/lib/structures/timeline_minus_issue_minus_events";
 
 export async function test_api_repos_issues_timeline_getByOwnerAndRepoAndIssue_number(
   connection: api.IConnection,

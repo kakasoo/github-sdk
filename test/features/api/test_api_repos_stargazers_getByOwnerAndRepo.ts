@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { simple_minus_user } from "@kakasoo/github-sdk/lib/structures/simple_minus_user";
+import { stargazer } from "@kakasoo/github-sdk/lib/structures/stargazer";
 import typia from "typia";
-
-import { simple_minus_user } from "@ORGANIZATION/PROJECT-api/lib/structures/simple_minus_user";
-import { stargazer } from "@ORGANIZATION/PROJECT-api/lib/structures/stargazer";
 
 export async function test_api_repos_stargazers_getByOwnerAndRepo(
   connection: api.IConnection,

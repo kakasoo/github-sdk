@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { copilot_minus_seat_minus_details } from "@kakasoo/github-sdk/lib/structures/copilot_minus_seat_minus_details";
 import typia from "typia";
-
-import { copilot_minus_seat_minus_details } from "@ORGANIZATION/PROJECT-api/lib/structures/copilot_minus_seat_minus_details";
 
 export async function test_api_orgs_members_copilot_getByOrgAndUsername(
   connection: api.IConnection,

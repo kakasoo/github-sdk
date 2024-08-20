@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsCommits } from "../../../../structures/IApiReposPullsCommits";
 import { commit } from "../../../../structures/commit";
+
 /**
  * List commits on a pull request.
  * Lists a maximum of 250 commits for a pull request. To receive a complete

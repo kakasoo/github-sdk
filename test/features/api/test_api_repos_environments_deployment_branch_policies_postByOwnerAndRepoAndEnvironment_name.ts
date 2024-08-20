@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { deployment_minus_branch_minus_policy } from "@kakasoo/github-sdk/lib/structures/deployment_minus_branch_minus_policy";
+import { deployment_minus_branch_minus_policy_minus_name_minus_pattern_minus_with_minus_type } from "@kakasoo/github-sdk/lib/structures/deployment_minus_branch_minus_policy_minus_name_minus_pattern_minus_with_minus_type";
 import typia from "typia";
-
-import { deployment_minus_branch_minus_policy } from "@ORGANIZATION/PROJECT-api/lib/structures/deployment_minus_branch_minus_policy";
-import { deployment_minus_branch_minus_policy_minus_name_minus_pattern_minus_with_minus_type } from "@ORGANIZATION/PROJECT-api/lib/structures/deployment_minus_branch_minus_policy_minus_name_minus_pattern_minus_with_minus_type";
 
 export async function test_api_repos_environments_deployment_branch_policies_postByOwnerAndRepoAndEnvironment_name(
   connection: api.IConnection,

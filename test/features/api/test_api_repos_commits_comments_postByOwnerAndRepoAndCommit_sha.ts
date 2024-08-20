@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { commit_minus_comment } from "@kakasoo/github-sdk/lib/structures/commit_minus_comment";
 import typia from "typia";
-
-import { commit_minus_comment } from "@ORGANIZATION/PROJECT-api/lib/structures/commit_minus_comment";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_commits_comments_postByOwnerAndRepoAndCommit_sha(
   connection: api.IConnection,

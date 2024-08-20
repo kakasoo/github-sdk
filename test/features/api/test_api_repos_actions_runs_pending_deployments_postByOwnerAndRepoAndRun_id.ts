@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { deployment } from "@kakasoo/github-sdk/lib/structures/deployment";
 import typia from "typia";
-
-import { deployment } from "@ORGANIZATION/PROJECT-api/lib/structures/deployment";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_actions_runs_pending_deployments_postByOwnerAndRepoAndRun_id(
   connection: api.IConnection,

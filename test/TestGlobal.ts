@@ -1,4 +1,4 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
 
 export namespace TestGlobal {
   export const connection = (): api.IConnection => ({

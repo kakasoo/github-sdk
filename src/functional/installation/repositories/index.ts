@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiInstallationRepositories } from "../../../structures/IApiInstallationRepositories";
 import { response } from "../../../structures/response";
+
 /**
  * List repositories accessible to the app installation.
  * List repositories that an app installation can access.

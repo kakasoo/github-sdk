@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsCopilotUsage } from "../../../../structures/IApiOrgsCopilotUsage";
 import { copilot_minus_usage_minus_metrics } from "../../../../structures/copilot_minus_usage_minus_metrics";
+
 /**
  * Get a summary of Copilot usage for organization members.
  * > [!NOTE]

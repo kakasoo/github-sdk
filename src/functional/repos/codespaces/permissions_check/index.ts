@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodespacesPermissionsCheck } from "../../../../structures/IApiReposCodespacesPermissionsCheck";
 import { codespaces_minus_permissions_minus_check_minus_for_minus_devcontainer } from "../../../../structures/codespaces_minus_permissions_minus_check_minus_for_minus_devcontainer";
+
 /**
  * Check if permissions defined by a devcontainer have been accepted by the authenticated user.
  * Checks whether the permissions defined by a given devcontainer configuration have been accepted by the authenticated user.

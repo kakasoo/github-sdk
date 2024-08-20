@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposRulesets } from "@kakasoo/github-sdk/lib/structures/IApiReposRulesets";
+import { repository_minus_ruleset } from "@kakasoo/github-sdk/lib/structures/repository_minus_ruleset";
 import typia, { tags } from "typia";
-
-import { repository_minus_ruleset } from "@ORGANIZATION/PROJECT-api/lib/structures/repository_minus_ruleset";
-import { IApiReposRulesets } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposRulesets";
 
 export async function test_api_repos_rulesets_getByOwnerAndRepoAndRuleset_id(
   connection: api.IConnection,

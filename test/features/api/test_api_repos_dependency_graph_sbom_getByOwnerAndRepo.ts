@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { dependency_minus_graph_minus_spdx_minus_sbom } from "@kakasoo/github-sdk/lib/structures/dependency_minus_graph_minus_spdx_minus_sbom";
 import typia from "typia";
-
-import { dependency_minus_graph_minus_spdx_minus_sbom } from "@ORGANIZATION/PROJECT-api/lib/structures/dependency_minus_graph_minus_spdx_minus_sbom";
 
 export async function test_api_repos_dependency_graph_sbom_getByOwnerAndRepo(
   connection: api.IConnection,

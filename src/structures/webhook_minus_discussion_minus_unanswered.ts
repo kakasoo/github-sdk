@@ -1,8 +1,8 @@
 import { discussion } from "./discussion";
-import { webhooks_answer } from "./webhooks_answer";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
 import { repository_minus_webhooks } from "./repository_minus_webhooks";
 import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
+import { webhooks_answer } from "./webhooks_answer";
 
 /**
  * @title discussion unanswered event

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposStargazers } from "../../../structures/IApiReposStargazers";
 import { simple_minus_user } from "../../../structures/simple_minus_user";
 import { stargazer } from "../../../structures/stargazer";
+
 /**
  * List stargazers.
  * Lists the people that have starred the repository.

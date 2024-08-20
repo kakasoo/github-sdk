@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { actions_minus_cache_minus_list } from "@kakasoo/github-sdk/lib/structures/actions_minus_cache_minus_list";
 import typia from "typia";
-
-import { actions_minus_cache_minus_list } from "@ORGANIZATION/PROJECT-api/lib/structures/actions_minus_cache_minus_list";
 
 export async function test_api_repos_actions_caches_eraseByOwnerAndRepo(
   connection: api.IConnection,

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia, { tags } from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsActionsVariablesRepositories } from "../../../../../structures/IApiOrgsActionsVariablesRepositories";
-import { response } from "../../../../../structures/response";
 import { body } from "../../../../../structures/body";
+import { response } from "../../../../../structures/response";
+
 /**
  * List selected repositories for an organization variable.
  * Lists all repositories that can access an organization variable

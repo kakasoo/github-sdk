@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPropertiesValues } from "../../../../structures/IApiReposPropertiesValues";
-import { custom_minus_property_minus_value } from "../../../../structures/custom_minus_property_minus_value";
 import { body } from "../../../../structures/body";
+import { custom_minus_property_minus_value } from "../../../../structures/custom_minus_property_minus_value";
+
 /**
  * Get all custom property values for a repository.
  * Gets all custom property values that are set for a repository.

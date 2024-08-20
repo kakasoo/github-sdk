@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { participation_minus_stats } from "@kakasoo/github-sdk/lib/structures/participation_minus_stats";
 import typia from "typia";
-
-import { participation_minus_stats } from "@ORGANIZATION/PROJECT-api/lib/structures/participation_minus_stats";
 
 export async function test_api_repos_stats_participation_getByOwnerAndRepo(
   connection: api.IConnection,

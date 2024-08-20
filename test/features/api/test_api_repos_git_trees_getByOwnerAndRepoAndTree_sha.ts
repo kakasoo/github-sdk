@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposGitTrees } from "@kakasoo/github-sdk/lib/structures/IApiReposGitTrees";
+import { git_minus_tree } from "@kakasoo/github-sdk/lib/structures/git_minus_tree";
 import typia from "typia";
-
-import { git_minus_tree } from "@ORGANIZATION/PROJECT-api/lib/structures/git_minus_tree";
-import { IApiReposGitTrees } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposGitTrees";
 
 export async function test_api_repos_git_trees_getByOwnerAndRepoAndTree_sha(
   connection: api.IConnection,

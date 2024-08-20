@@ -1,9 +1,9 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
-import { enterprise } from "./enterprise";
 import { app_minus_permissions } from "./app_minus_permissions";
+import { enterprise } from "./enterprise";
 import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * Installation

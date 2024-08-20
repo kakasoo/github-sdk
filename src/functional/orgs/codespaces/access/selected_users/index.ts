@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsCodespacesAccessSelectedUsers } from "../../../../../structures/IApiOrgsCodespacesAccessSelectedUsers";
 import { body } from "../../../../../structures/body";
+
 /**
  * Add users to Codespaces access for an organization.
  * Codespaces for the specified users will be billed to the organization.

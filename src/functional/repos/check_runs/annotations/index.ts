@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCheckRunsAnnotations } from "../../../../structures/IApiReposCheckRunsAnnotations";
 import { check_minus_annotation } from "../../../../structures/check_minus_annotation";
+
 /**
  * List check run annotations.
  * Lists annotations for a check run using the annotation `id`.

@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { file_minus_commit } from "@kakasoo/github-sdk/lib/structures/file_minus_commit";
 import typia from "typia";
-
-import { file_minus_commit } from "@ORGANIZATION/PROJECT-api/lib/structures/file_minus_commit";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_contents_eraseByOwnerAndRepoAndPath(
   connection: api.IConnection,

@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { review_minus_custom_minus_gates_minus_comment_minus_required } from "@kakasoo/github-sdk/lib/structures/review_minus_custom_minus_gates_minus_comment_minus_required";
+import { review_minus_custom_minus_gates_minus_state_minus_required } from "@kakasoo/github-sdk/lib/structures/review_minus_custom_minus_gates_minus_state_minus_required";
 import typia from "typia";
-
-import { review_minus_custom_minus_gates_minus_comment_minus_required } from "@ORGANIZATION/PROJECT-api/lib/structures/review_minus_custom_minus_gates_minus_comment_minus_required";
-import { review_minus_custom_minus_gates_minus_state_minus_required } from "@ORGANIZATION/PROJECT-api/lib/structures/review_minus_custom_minus_gates_minus_state_minus_required";
 
 export async function test_api_repos_actions_runs_deployment_protection_rule_postByOwnerAndRepoAndRun_id(
   connection: api.IConnection,

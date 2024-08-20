@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposReadme } from "@kakasoo/github-sdk/lib/structures/IApiReposReadme";
+import { content_minus_file } from "@kakasoo/github-sdk/lib/structures/content_minus_file";
 import typia from "typia";
-
-import { content_minus_file } from "@ORGANIZATION/PROJECT-api/lib/structures/content_minus_file";
-import { IApiReposReadme } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposReadme";
 
 export async function test_api_repos_readme_getByOwnerAndRepoAndDir(
   connection: api.IConnection,

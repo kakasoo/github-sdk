@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsMembersCodespacesStop } from "../../../../../structures/IApiOrgsMembersCodespacesStop";
 import { codespace } from "../../../../../structures/codespace";
+
 /**
  * Stop a codespace for an organization user.
  * Stops a user's codespace.

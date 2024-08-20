@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { tag_minus_protection } from "@kakasoo/github-sdk/lib/structures/tag_minus_protection";
 import typia from "typia";
-
-import { tag_minus_protection } from "@ORGANIZATION/PROJECT-api/lib/structures/tag_minus_protection";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_tags_protection_postByOwnerAndRepo(
   connection: api.IConnection,

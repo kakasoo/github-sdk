@@ -17,7 +17,7 @@ export namespace ArgumentParser {
     boolean: (name: string) => (message: string) => Promise<boolean>;
   }
 
-  export const parse = async <T,>(
+  export const parse = async <T>(
     inquiry: (
       command: commander.Command,
       prompt: Prompt,

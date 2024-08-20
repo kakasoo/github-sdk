@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsCopilotBillingSeats } from "@kakasoo/github-sdk/lib/structures/IApiOrgsCopilotBillingSeats";
+import { response } from "@kakasoo/github-sdk/lib/structures/response";
 import typia from "typia";
-
-import { response } from "@ORGANIZATION/PROJECT-api/lib/structures/response";
-import { IApiOrgsCopilotBillingSeats } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsCopilotBillingSeats";
 
 export async function test_api_orgs_copilot_billing_seats_getByOrg(
   connection: api.IConnection,

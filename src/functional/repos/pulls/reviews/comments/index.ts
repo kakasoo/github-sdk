@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsReviewsComments } from "../../../../../structures/IApiReposPullsReviewsComments";
 import { review_minus_comment } from "../../../../../structures/review_minus_comment";
+
 /**
  * List comments for a pull request review.
  * Lists comments for a specific pull request review.

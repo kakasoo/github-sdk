@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { simple_minus_classroom_minus_assignment } from "@kakasoo/github-sdk/lib/structures/simple_minus_classroom_minus_assignment";
 import typia from "typia";
-
-import { simple_minus_classroom_minus_assignment } from "@ORGANIZATION/PROJECT-api/lib/structures/simple_minus_classroom_minus_assignment";
 
 export async function test_api_classrooms_assignments_getByClassroom_id(
   connection: api.IConnection,

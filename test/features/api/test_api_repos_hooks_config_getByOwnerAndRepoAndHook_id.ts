@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { webhook_minus_config } from "@kakasoo/github-sdk/lib/structures/webhook_minus_config";
 import typia from "typia";
-
-import { webhook_minus_config } from "@ORGANIZATION/PROJECT-api/lib/structures/webhook_minus_config";
 
 export async function test_api_repos_hooks_config_getByOwnerAndRepoAndHook_id(
   connection: api.IConnection,

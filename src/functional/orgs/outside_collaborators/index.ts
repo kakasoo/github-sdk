@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsOutsideCollaborators } from "../../../structures/IApiOrgsOutsideCollaborators";
-import { simple_minus_user } from "../../../structures/simple_minus_user";
 import { body } from "../../../structures/body";
+import { simple_minus_user } from "../../../structures/simple_minus_user";
+
 /**
  * List outside collaborators for an organization.
  * List all users who are outside collaborators of an organization.

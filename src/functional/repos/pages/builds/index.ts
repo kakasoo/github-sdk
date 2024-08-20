@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia, { tags } from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPagesBuilds } from "../../../../structures/IApiReposPagesBuilds";
 import { page_minus_build } from "../../../../structures/page_minus_build";
 import { page_minus_build_minus_status } from "../../../../structures/page_minus_build_minus_status";
+
 export * as latest from "./latest";
 /**
  * List GitHub Pages builds.

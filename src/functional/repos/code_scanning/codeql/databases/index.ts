@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeScanningCodeqlDatabases } from "../../../../../structures/IApiReposCodeScanningCodeqlDatabases";
 import { code_minus_scanning_minus_codeql_minus_database } from "../../../../../structures/code_minus_scanning_minus_codeql_minus_database";
+
 /**
  * List CodeQL databases for a repository.
  * Lists the CodeQL databases that are available in a repository.

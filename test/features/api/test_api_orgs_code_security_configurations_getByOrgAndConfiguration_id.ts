@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { code_minus_security_minus_configuration } from "@kakasoo/github-sdk/lib/structures/code_minus_security_minus_configuration";
 import typia from "typia";
-
-import { code_minus_security_minus_configuration } from "@ORGANIZATION/PROJECT-api/lib/structures/code_minus_security_minus_configuration";
 
 export async function test_api_orgs_code_security_configurations_getByOrgAndConfiguration_id(
   connection: api.IConnection,

@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { project_minus_card } from "@kakasoo/github-sdk/lib/structures/project_minus_card";
 import typia from "typia";
-
-import { project_minus_card } from "@ORGANIZATION/PROJECT-api/lib/structures/project_minus_card";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_projects_columns_cards_patchByCard_id(
   connection: api.IConnection,

@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { gpg_minus_key } from "@kakasoo/github-sdk/lib/structures/gpg_minus_key";
 import typia from "typia";
-
-import { gpg_minus_key } from "@ORGANIZATION/PROJECT-api/lib/structures/gpg_minus_key";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_user_gpg_keys_post(connection: api.IConnection) {
   const output: gpg_minus_key = await api.functional.user.gpg_keys.post(

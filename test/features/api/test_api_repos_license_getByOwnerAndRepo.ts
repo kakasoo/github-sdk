@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { license_minus_content } from "@kakasoo/github-sdk/lib/structures/license_minus_content";
 import typia from "typia";
-
-import { license_minus_content } from "@ORGANIZATION/PROJECT-api/lib/structures/license_minus_content";
 
 export async function test_api_repos_license_getByOwnerAndRepo(
   connection: api.IConnection,

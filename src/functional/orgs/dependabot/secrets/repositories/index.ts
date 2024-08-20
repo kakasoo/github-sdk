@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia, { tags } from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsDependabotSecretsRepositories } from "../../../../../structures/IApiOrgsDependabotSecretsRepositories";
-import { response } from "../../../../../structures/response";
 import { body } from "../../../../../structures/body";
+import { response } from "../../../../../structures/response";
+
 /**
  * List selected repositories for an organization secret.
  * Lists all repositories that have been selected when the `visibility`

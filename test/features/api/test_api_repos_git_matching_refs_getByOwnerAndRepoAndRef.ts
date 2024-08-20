@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { git_minus_ref } from "@kakasoo/github-sdk/lib/structures/git_minus_ref";
 import typia from "typia";
-
-import { git_minus_ref } from "@ORGANIZATION/PROJECT-api/lib/structures/git_minus_ref";
 
 export async function test_api_repos_git_matching_refs_getByOwnerAndRepoAndRef(
   connection: api.IConnection,

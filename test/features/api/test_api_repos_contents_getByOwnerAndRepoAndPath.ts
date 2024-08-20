@@ -1,11 +1,10 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposContents } from "@kakasoo/github-sdk/lib/structures/IApiReposContents";
+import { content_minus_directory } from "@kakasoo/github-sdk/lib/structures/content_minus_directory";
+import { content_minus_file } from "@kakasoo/github-sdk/lib/structures/content_minus_file";
+import { content_minus_submodule } from "@kakasoo/github-sdk/lib/structures/content_minus_submodule";
+import { content_minus_symlink } from "@kakasoo/github-sdk/lib/structures/content_minus_symlink";
 import typia from "typia";
-
-import { content_minus_directory } from "@ORGANIZATION/PROJECT-api/lib/structures/content_minus_directory";
-import { content_minus_file } from "@ORGANIZATION/PROJECT-api/lib/structures/content_minus_file";
-import { content_minus_symlink } from "@ORGANIZATION/PROJECT-api/lib/structures/content_minus_symlink";
-import { content_minus_submodule } from "@ORGANIZATION/PROJECT-api/lib/structures/content_minus_submodule";
-import { IApiReposContents } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposContents";
 
 export async function test_api_repos_contents_getByOwnerAndRepoAndPath(
   connection: api.IConnection,

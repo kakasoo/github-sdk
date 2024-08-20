@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposForks } from "../../../structures/IApiReposForks";
-import { minimal_minus_repository } from "../../../structures/minimal_minus_repository";
 import { body } from "../../../structures/body";
+import { minimal_minus_repository } from "../../../structures/minimal_minus_repository";
+
 /**
  * @tag repos
  * @path repos/:owner/:repo/forks

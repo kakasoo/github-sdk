@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { view_minus_traffic } from "@kakasoo/github-sdk/lib/structures/view_minus_traffic";
 import typia from "typia";
-
-import { view_minus_traffic } from "@ORGANIZATION/PROJECT-api/lib/structures/view_minus_traffic";
 
 export async function test_api_repos_traffic_views_getByOwnerAndRepo(
   connection: api.IConnection,

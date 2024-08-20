@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposMilestonesLabels } from "../../../../structures/IApiReposMilestonesLabels";
 import { label } from "../../../../structures/label";
+
 /**
  * List labels for issues in a milestone.
  * Lists labels for issues in a milestone.

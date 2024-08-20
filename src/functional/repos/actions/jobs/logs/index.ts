@@ -1,9 +1,10 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsJobsLogs } from "../../../../../structures/IApiReposActionsJobsLogs";
+
 /**
  * Download job logs for a workflow run.
  * Gets a redirect URL to download a plain text file of logs for a workflow job. This link expires after 1 minute. Look

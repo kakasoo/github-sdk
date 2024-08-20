@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { runner } from "@kakasoo/github-sdk/lib/structures/runner";
 import typia from "typia";
-
-import { runner } from "@ORGANIZATION/PROJECT-api/lib/structures/runner";
 
 export async function test_api_orgs_actions_runners_getByOrgAndRunner_id(
   connection: api.IConnection,

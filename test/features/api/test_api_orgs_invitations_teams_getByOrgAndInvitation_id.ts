@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { team } from "@kakasoo/github-sdk/lib/structures/team";
 import typia from "typia";
-
-import { team } from "@ORGANIZATION/PROJECT-api/lib/structures/team";
 
 export async function test_api_orgs_invitations_teams_getByOrgAndInvitation_id(
   connection: api.IConnection,

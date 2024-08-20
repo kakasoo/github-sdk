@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposLicense } from "../../../structures/IApiReposLicense";
 import { license_minus_content } from "../../../structures/license_minus_content";
+
 /**
  * Get the license for a repository.
  * This method returns the contents of the repository's license file, if one is detected.

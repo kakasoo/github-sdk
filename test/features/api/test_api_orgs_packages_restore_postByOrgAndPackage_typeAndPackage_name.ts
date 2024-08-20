@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsPackagesRestore } from "@kakasoo/github-sdk/lib/structures/IApiOrgsPackagesRestore";
 import typia from "typia";
-
-import { IApiOrgsPackagesRestore } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsPackagesRestore";
 
 export async function test_api_orgs_packages_restore_postByOrgAndPackage_typeAndPackage_name(
   connection: api.IConnection,

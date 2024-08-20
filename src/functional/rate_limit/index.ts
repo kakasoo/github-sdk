@@ -3,6 +3,7 @@ import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
 
 import { rate_minus_limit_minus_overview } from "../../structures/rate_minus_limit_minus_overview";
+
 /**
  * Get rate limit status for the authenticated user.
  * > [!NOTE]

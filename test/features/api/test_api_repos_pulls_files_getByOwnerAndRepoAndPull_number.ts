@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { diff_minus_entry } from "@kakasoo/github-sdk/lib/structures/diff_minus_entry";
 import typia from "typia";
-
-import { diff_minus_entry } from "@ORGANIZATION/PROJECT-api/lib/structures/diff_minus_entry";
 
 export async function test_api_repos_pulls_files_getByOwnerAndRepoAndPull_number(
   connection: api.IConnection,

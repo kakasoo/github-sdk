@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiSearchTopics } from "@kakasoo/github-sdk/lib/structures/IApiSearchTopics";
+import { response } from "@kakasoo/github-sdk/lib/structures/response";
 import typia from "typia";
-
-import { response } from "@ORGANIZATION/PROJECT-api/lib/structures/response";
-import { IApiSearchTopics } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiSearchTopics";
 
 export async function test_api_search_topics_get(connection: api.IConnection) {
   const output: response = await api.functional.search.topics.get(

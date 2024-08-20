@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersHovercard } from "../../../structures/IApiUsersHovercard";
 import { hovercard } from "../../../structures/hovercard";
+
 /**
  * Get contextual information for a user.
  * Provides hovercard information. You can find out more about someone in relation to their pull requests, issues, repositories, and organizations.

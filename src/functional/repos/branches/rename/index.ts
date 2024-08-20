@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposBranchesRename } from "../../../../structures/IApiReposBranchesRename";
 import { body } from "../../../../structures/body";
 import { branch_minus_with_minus_protection } from "../../../../structures/branch_minus_with_minus_protection";
+
 /**
  * Rename a branch.
  * Renames a branch in a repository.

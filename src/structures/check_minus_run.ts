@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
+import { deployment_minus_simple } from "./deployment_minus_simple";
 import { nullable_minus_integration } from "./nullable_minus_integration";
 import { pull_minus_request_minus_minimal } from "./pull_minus_request_minus_minimal";
-import { deployment_minus_simple } from "./deployment_minus_simple";
 
 /**
  * A check performed on the code of a given code change

@@ -1,7 +1,7 @@
 import { check_minus_run_minus_with_minus_simple_minus_check_minus_suite } from "./check_minus_run_minus_with_minus_simple_minus_check_minus_suite";
-import { simple_minus_installation } from "./simple_minus_installation";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
 import { repository_minus_webhooks } from "./repository_minus_webhooks";
+import { simple_minus_installation } from "./simple_minus_installation";
 import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
 
 /**

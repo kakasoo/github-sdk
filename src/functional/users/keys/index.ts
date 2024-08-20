@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersKeys } from "../../../structures/IApiUsersKeys";
 import { key_minus_simple } from "../../../structures/key_minus_simple";
+
 /**
  * List public keys for a user.
  * Lists the _verified_ public SSH keys for a user. This is accessible by anyone.

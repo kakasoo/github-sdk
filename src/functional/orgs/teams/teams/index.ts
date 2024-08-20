@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsTeamsTeams } from "../../../../structures/IApiOrgsTeamsTeams";
 import { team } from "../../../../structures/team";
+
 /**
  * List child teams.
  * Lists the child teams of the team specified by `{team_slug}`.

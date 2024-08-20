@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsSettingsBillingSharedStorage } from "../../../../../structures/IApiOrgsSettingsBillingSharedStorage";
 import { combined_minus_billing_minus_usage } from "../../../../../structures/combined_minus_billing_minus_usage";
+
 /**
  * Get shared storage billing for an organization.
  * Gets the estimated paid and estimated total storage used for GitHub Actions and GitHub Packages.

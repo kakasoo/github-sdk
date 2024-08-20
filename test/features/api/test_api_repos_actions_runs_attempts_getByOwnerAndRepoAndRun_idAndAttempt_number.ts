@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { workflow_minus_run } from "@kakasoo/github-sdk/lib/structures/workflow_minus_run";
 import typia from "typia";
-
-import { workflow_minus_run } from "@ORGANIZATION/PROJECT-api/lib/structures/workflow_minus_run";
 
 export async function test_api_repos_actions_runs_attempts_getByOwnerAndRepoAndRun_idAndAttempt_number(
   connection: api.IConnection,

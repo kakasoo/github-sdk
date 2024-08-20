@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersSshSigningKeys } from "../../../structures/IApiUsersSshSigningKeys";
 import { ssh_minus_signing_minus_key } from "../../../structures/ssh_minus_signing_minus_key";
+
 /**
  * List SSH signing keys for a user.
  * Lists the SSH signing keys for a user. This operation is accessible by anyone.

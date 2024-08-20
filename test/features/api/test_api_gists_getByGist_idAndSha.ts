@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { gist_minus_simple } from "@kakasoo/github-sdk/lib/structures/gist_minus_simple";
 import typia from "typia";
-
-import { gist_minus_simple } from "@ORGANIZATION/PROJECT-api/lib/structures/gist_minus_simple";
 
 export async function test_api_gists_getByGist_idAndSha(
   connection: api.IConnection,

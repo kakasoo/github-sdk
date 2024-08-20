@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia, { tags } from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeScanningCodeqlVariantAnalyses } from "../../../../../structures/IApiReposCodeScanningCodeqlVariantAnalyses";
 import { code_minus_scanning_minus_variant_minus_analysis } from "../../../../../structures/code_minus_scanning_minus_variant_minus_analysis";
+
 export * as repos from "./repos";
 /**
  * Create a CodeQL variant analysis.

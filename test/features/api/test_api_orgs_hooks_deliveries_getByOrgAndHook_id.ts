@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsHooksDeliveries } from "@kakasoo/github-sdk/lib/structures/IApiOrgsHooksDeliveries";
+import { hook_minus_delivery_minus_item } from "@kakasoo/github-sdk/lib/structures/hook_minus_delivery_minus_item";
 import typia from "typia";
-
-import { hook_minus_delivery_minus_item } from "@ORGANIZATION/PROJECT-api/lib/structures/hook_minus_delivery_minus_item";
-import { IApiOrgsHooksDeliveries } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsHooksDeliveries";
 
 export async function test_api_orgs_hooks_deliveries_getByOrgAndHook_id(
   connection: api.IConnection,

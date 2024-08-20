@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
 import { minimal_minus_repository } from "./minimal_minus_repository";
 import { nullable_minus_codespace_minus_machine } from "./nullable_minus_codespace_minus_machine";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * A codespace.

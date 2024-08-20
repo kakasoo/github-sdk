@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiTeamsMemberships } from "../../../structures/IApiTeamsMemberships";
-import { team_minus_membership } from "../../../structures/team_minus_membership";
 import { body } from "../../../structures/body";
+import { team_minus_membership } from "../../../structures/team_minus_membership";
+
 /**
  * Get team membership for a user (Legacy).
  * > [!WARNING]

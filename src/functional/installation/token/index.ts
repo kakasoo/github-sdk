@@ -1,6 +1,7 @@
 import { IConnection } from "@nestia/fetcher";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
+
 /**
  * Revoke an installation access token.
  * Revokes the installation token you're using to authenticate as an installation and access this endpoint.

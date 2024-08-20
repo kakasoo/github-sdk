@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { team_minus_membership } from "@kakasoo/github-sdk/lib/structures/team_minus_membership";
 import typia from "typia";
-
-import { team_minus_membership } from "@ORGANIZATION/PROJECT-api/lib/structures/team_minus_membership";
 
 export async function test_api_orgs_teams_memberships_getByOrgAndTeam_slugAndUsername(
   connection: api.IConnection,

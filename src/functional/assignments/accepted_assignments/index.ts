@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiAssignmentsAcceptedAssignments } from "../../../structures/IApiAssignmentsAcceptedAssignments";
 import { classroom_minus_accepted_minus_assignment } from "../../../structures/classroom_minus_accepted_minus_assignment";
+
 /**
  * List accepted assignments for an assignment.
  * Lists any assignment repositories that have been created by students accepting a GitHub Classroom assignment. Accepted assignments will only be returned if the current user is an administrator of the GitHub Classroom for the assignment.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { combined_minus_commit_minus_status } from "@kakasoo/github-sdk/lib/structures/combined_minus_commit_minus_status";
 import typia from "typia";
-
-import { combined_minus_commit_minus_status } from "@ORGANIZATION/PROJECT-api/lib/structures/combined_minus_commit_minus_status";
 
 export async function test_api_repos_commits_status_getByOwnerAndRepoAndRef(
   connection: api.IConnection,

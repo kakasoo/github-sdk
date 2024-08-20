@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsRunnersLabels } from "../../../../../structures/IApiReposActionsRunnersLabels";
-import { response } from "../../../../../structures/response";
 import { body } from "../../../../../structures/body";
+import { response } from "../../../../../structures/response";
+
 /**
  * List labels for a self-hosted runner for a repository.
  * Lists all labels for a self-hosted runner configured in a repository.

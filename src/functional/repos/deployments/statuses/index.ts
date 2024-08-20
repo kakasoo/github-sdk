@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia, { tags } from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposDeploymentsStatuses } from "../../../../structures/IApiReposDeploymentsStatuses";
-import { deployment_minus_status } from "../../../../structures/deployment_minus_status";
 import { body } from "../../../../structures/body";
+import { deployment_minus_status } from "../../../../structures/deployment_minus_status";
+
 /**
  * List deployment statuses.
  * Users with pull access can view deployment statuses for a deployment:

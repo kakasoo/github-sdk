@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsCommentsReactions } from "../../../../../structures/IApiReposPullsCommentsReactions";
-import { reaction } from "../../../../../structures/reaction";
 import { body } from "../../../../../structures/body";
+import { reaction } from "../../../../../structures/reaction";
+
 /**
  * List reactions for a pull request review comment.
  * List the reactions to a [pull request review comment](https://docs.github.com/rest/pulls/comments#get-a-review-comment-for-a-pull-request).

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposNotifications } from "../../../structures/IApiReposNotifications";
-import { thread } from "../../../structures/thread";
 import { body } from "../../../structures/body";
+import { thread } from "../../../structures/thread";
+
 /**
  * List repository notifications for the authenticated user.
  * Lists all notifications for the current user in the specified repository.

@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { metadata } from "./metadata";
 import { manifest } from "./manifest";
+import { metadata } from "./metadata";
 
 /**
  * Create a new snapshot of a repository's dependencies.

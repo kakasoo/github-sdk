@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposRulesBranches } from "../../../../structures/IApiReposRulesBranches";
 import { repository_minus_rule_minus_detailed } from "../../../../structures/repository_minus_rule_minus_detailed";
+
 /**
  * Get rules for a branch.
  * Returns all active rules that apply to the specified branch. The branch does not need to exist; rules that would apply

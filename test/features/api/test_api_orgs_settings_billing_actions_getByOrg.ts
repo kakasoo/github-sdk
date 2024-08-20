@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { actions_minus_billing_minus_usage } from "@kakasoo/github-sdk/lib/structures/actions_minus_billing_minus_usage";
 import typia from "typia";
-
-import { actions_minus_billing_minus_usage } from "@ORGANIZATION/PROJECT-api/lib/structures/actions_minus_billing_minus_usage";
 
 export async function test_api_orgs_settings_billing_actions_getByOrg(
   connection: api.IConnection,

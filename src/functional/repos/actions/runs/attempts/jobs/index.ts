@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsRunsAttemptsJobs } from "../../../../../../structures/IApiReposActionsRunsAttemptsJobs";
 import { response } from "../../../../../../structures/response";
+
 /**
  * List jobs for a workflow run attempt.
  * Lists jobs for a specific workflow run attempt. You can use parameters to narrow the list of results. For more information

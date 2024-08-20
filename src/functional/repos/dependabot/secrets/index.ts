@@ -1,13 +1,14 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposDependabotSecrets } from "../../../../structures/IApiReposDependabotSecrets";
-import { response } from "../../../../structures/response";
-import { dependabot_minus_secret } from "../../../../structures/dependabot_minus_secret";
 import { body } from "../../../../structures/body";
+import { dependabot_minus_secret } from "../../../../structures/dependabot_minus_secret";
 import { empty_minus_object } from "../../../../structures/empty_minus_object";
+import { response } from "../../../../structures/response";
+
 export * as public_key from "./public_key";
 /**
  * List repository secrets.

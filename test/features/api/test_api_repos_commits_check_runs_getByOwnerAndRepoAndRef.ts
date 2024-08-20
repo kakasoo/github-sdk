@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposCommitsCheckRuns } from "@kakasoo/github-sdk/lib/structures/IApiReposCommitsCheckRuns";
+import { response } from "@kakasoo/github-sdk/lib/structures/response";
 import typia from "typia";
-
-import { response } from "@ORGANIZATION/PROJECT-api/lib/structures/response";
-import { IApiReposCommitsCheckRuns } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposCommitsCheckRuns";
 
 export async function test_api_repos_commits_check_runs_getByOwnerAndRepoAndRef(
   connection: api.IConnection,

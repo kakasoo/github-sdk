@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPagesHealth } from "../../../../structures/IApiReposPagesHealth";
 import { pages_minus_health_minus_check } from "../../../../structures/pages_minus_health_minus_check";
+
 /**
  * Get a DNS health check for GitHub Pages.
  * Gets a health check of the DNS settings for the `CNAME` record configured for a repository's GitHub Pages.

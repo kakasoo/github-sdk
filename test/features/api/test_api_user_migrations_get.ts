@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { migration } from "@kakasoo/github-sdk/lib/structures/migration";
 import typia from "typia";
-
-import { migration } from "@ORGANIZATION/PROJECT-api/lib/structures/migration";
 
 export async function test_api_user_migrations_get(
   connection: api.IConnection,

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { page_minus_build } from "@kakasoo/github-sdk/lib/structures/page_minus_build";
 import typia from "typia";
-
-import { page_minus_build } from "@ORGANIZATION/PROJECT-api/lib/structures/page_minus_build";
 
 export async function test_api_repos_pages_builds_latest_getByOwnerAndRepo(
   connection: api.IConnection,

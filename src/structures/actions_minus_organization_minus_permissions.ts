@@ -1,5 +1,5 @@
-import { enabled_minus_repositories } from "./enabled_minus_repositories";
 import { allowed_minus_actions } from "./allowed_minus_actions";
+import { enabled_minus_repositories } from "./enabled_minus_repositories";
 import { selected_minus_actions_minus_url } from "./selected_minus_actions_minus_url";
 
 export type actions_minus_organization_minus_permissions = {

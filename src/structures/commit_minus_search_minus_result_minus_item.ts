@@ -1,10 +1,10 @@
 import { tags } from "typia";
 
-import { nullable_minus_git_minus_user } from "./nullable_minus_git_minus_user";
-import { verification } from "./verification";
-import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { minimal_minus_repository } from "./minimal_minus_repository";
+import { nullable_minus_git_minus_user } from "./nullable_minus_git_minus_user";
+import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { search_minus_result_minus_text_minus_matches } from "./search_minus_result_minus_text_minus_matches";
+import { verification } from "./verification";
 
 /**
  * Commit Search Result Item

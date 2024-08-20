@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsCodespacesSecretsPublicKey } from "../../../../../structures/IApiOrgsCodespacesSecretsPublicKey";
 import { codespaces_minus_public_minus_key } from "../../../../../structures/codespaces_minus_public_minus_key";
+
 /**
  * Get an organization public key.
  * Gets a public key for an organization, which is required in order to encrypt secrets. You need to encrypt the value of a secret before you can create or update secrets.

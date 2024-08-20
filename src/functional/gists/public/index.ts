@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiGistsPublic } from "../../../structures/IApiGistsPublic";
 import { base_minus_gist } from "../../../structures/base_minus_gist";
+
 /**
  * List public gists sorted by most recently updated to least recently updated.
  *

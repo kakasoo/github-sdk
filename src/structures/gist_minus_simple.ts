@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
-import { public_minus_user } from "./public_minus_user";
 import { gist_minus_history } from "./gist_minus_history";
 import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
+import { public_minus_user } from "./public_minus_user";
 import { simple_minus_user } from "./simple_minus_user";
 
 /**

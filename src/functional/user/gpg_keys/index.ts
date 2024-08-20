@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserGpgKeys } from "../../../structures/IApiUserGpgKeys";
-import { gpg_minus_key } from "../../../structures/gpg_minus_key";
 import { body } from "../../../structures/body";
+import { gpg_minus_key } from "../../../structures/gpg_minus_key";
+
 /**
  * List GPG keys for the authenticated user.
  * Lists the current user's GPG keys.

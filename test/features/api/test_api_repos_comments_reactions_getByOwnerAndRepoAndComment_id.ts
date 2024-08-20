@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposCommentsReactions } from "@kakasoo/github-sdk/lib/structures/IApiReposCommentsReactions";
+import { reaction } from "@kakasoo/github-sdk/lib/structures/reaction";
 import typia from "typia";
-
-import { reaction } from "@ORGANIZATION/PROJECT-api/lib/structures/reaction";
-import { IApiReposCommentsReactions } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposCommentsReactions";
 
 export async function test_api_repos_comments_reactions_getByOwnerAndRepoAndComment_id(
   connection: api.IConnection,

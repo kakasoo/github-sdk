@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { simple_minus_repository } from "./simple_minus_repository";
 import { code_minus_scanning_minus_variant_minus_analysis_minus_status } from "./code_minus_scanning_minus_variant_minus_analysis_minus_status";
+import { simple_minus_repository } from "./simple_minus_repository";
 
 export type code_minus_scanning_minus_variant_minus_analysis_minus_repo_minus_task =
   {

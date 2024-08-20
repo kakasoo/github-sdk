@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposPullsCommentsReplies } from "../../../../../structures/IApiReposPullsCommentsReplies";
 import { body } from "../../../../../structures/body";
 import { pull_minus_request_minus_review_minus_comment } from "../../../../../structures/pull_minus_request_minus_review_minus_comment";
+
 /**
  * Create a reply for a review comment.
  * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { deployment_minus_protection_minus_rule } from "@kakasoo/github-sdk/lib/structures/deployment_minus_protection_minus_rule";
 import typia from "typia";
-
-import { deployment_minus_protection_minus_rule } from "@ORGANIZATION/PROJECT-api/lib/structures/deployment_minus_protection_minus_rule";
 
 export async function test_api_repos_environments_deployment_protection_rules_getByOwnerAndRepoAndEnvironment_nameAndProtection_rule_id(
   connection: api.IConnection,

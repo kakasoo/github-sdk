@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposIssuesLock } from "../../../../structures/IApiReposIssuesLock";
 import { body } from "../../../../structures/body";
+
 /**
  * Lock an issue.
  * Users with push access can lock an issue or pull request's conversation.

@@ -1,12 +1,13 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposGitBlobs } from "../../../../structures/IApiReposGitBlobs";
+import { blob } from "../../../../structures/blob";
 import { body } from "../../../../structures/body";
 import { short_minus_blob } from "../../../../structures/short_minus_blob";
-import { blob } from "../../../../structures/blob";
+
 /**
  * @tag git
  * @path repos/:owner/:repo/git/blobs

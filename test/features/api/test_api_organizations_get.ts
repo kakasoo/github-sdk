@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { organization_minus_simple } from "@kakasoo/github-sdk/lib/structures/organization_minus_simple";
 import typia from "typia";
-
-import { organization_minus_simple } from "@ORGANIZATION/PROJECT-api/lib/structures/organization_minus_simple";
 
 export async function test_api_organizations_get(connection: api.IConnection) {
   const output: organization_minus_simple[] =

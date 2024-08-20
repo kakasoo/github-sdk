@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { artifact } from "@kakasoo/github-sdk/lib/structures/artifact";
 import typia from "typia";
-
-import { artifact } from "@ORGANIZATION/PROJECT-api/lib/structures/artifact";
 
 export async function test_api_repos_actions_artifacts_getByOwnerAndRepoAndArtifact_id(
   connection: api.IConnection,

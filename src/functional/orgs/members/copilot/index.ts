@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsMembersCopilot } from "../../../../structures/IApiOrgsMembersCopilot";
 import { copilot_minus_seat_minus_details } from "../../../../structures/copilot_minus_seat_minus_details";
+
 /**
  * Get Copilot seat assignment details for a user.
  * > [!NOTE]

@@ -3,6 +3,7 @@ import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
 
 import { codespaces_minus_user_minus_public_minus_key } from "../../../../../structures/codespaces_minus_user_minus_public_minus_key";
+
 /**
  * Get public key for the authenticated user.
  * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets.

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposAutolinks } from "../../../structures/IApiReposAutolinks";
 import { autolink } from "../../../structures/autolink";
 import { body } from "../../../structures/body";
+
 /**
  * Get all autolinks of a repository.
  * Gets all autolinks that are configured for a repository.

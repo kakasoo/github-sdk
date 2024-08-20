@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposSubscription } from "../../../structures/IApiReposSubscription";
-import { repository_minus_subscription } from "../../../structures/repository_minus_subscription";
 import { body } from "../../../structures/body";
+import { repository_minus_subscription } from "../../../structures/repository_minus_subscription";
+
 /**
  * Get a repository subscription.
  * Gets information about whether the authenticated user is subscribed to the repository.

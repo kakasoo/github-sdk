@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { branch_minus_restriction_minus_policy } from "@kakasoo/github-sdk/lib/structures/branch_minus_restriction_minus_policy";
 import typia from "typia";
-
-import { branch_minus_restriction_minus_policy } from "@ORGANIZATION/PROJECT-api/lib/structures/branch_minus_restriction_minus_policy";
 
 export async function test_api_repos_branches_protection_restrictions_getByOwnerAndRepoAndBranch(
   connection: api.IConnection,

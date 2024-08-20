@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { empty_minus_object } from "@kakasoo/github-sdk/lib/structures/empty_minus_object";
 import typia from "typia";
-
-import { empty_minus_object } from "@ORGANIZATION/PROJECT-api/lib/structures/empty_minus_object";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_actions_runs_rerun_postByOwnerAndRepoAndRun_id(
   connection: api.IConnection,

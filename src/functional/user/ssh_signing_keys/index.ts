@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserSshSigningKeys } from "../../../structures/IApiUserSshSigningKeys";
-import { ssh_minus_signing_minus_key } from "../../../structures/ssh_minus_signing_minus_key";
 import { body } from "../../../structures/body";
+import { ssh_minus_signing_minus_key } from "../../../structures/ssh_minus_signing_minus_key";
+
 /**
  * List SSH signing keys for the authenticated user.
  * Lists the SSH signing keys for the authenticated user's GitHub account.

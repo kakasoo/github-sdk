@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCommunityProfile } from "../../../../structures/IApiReposCommunityProfile";
 import { community_minus_profile } from "../../../../structures/community_minus_profile";
+
 /**
  * Get community profile metrics.
  * Returns all community profile metrics for a repository. The repository cannot be a fork.

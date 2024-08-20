@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia, { tags } from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposIssuesEvents } from "../../../../structures/IApiReposIssuesEvents";
 import { issue_minus_event } from "../../../../structures/issue_minus_event";
 import { issue_minus_event_minus_for_minus_issue } from "../../../../structures/issue_minus_event_minus_for_minus_issue";
+
 /**
  * List issue events for a repository.
  * Lists events for a repository.

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsActionsCacheUsageByRepository } from "../../../../../structures/IApiOrgsActionsCacheUsageByRepository";
 import { response } from "../../../../../structures/response";
+
 /**
  * List repositories with GitHub Actions cache usage for an organization.
  * Lists repositories and their GitHub Actions cache usage for an organization.

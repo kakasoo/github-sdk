@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { rate_minus_limit_minus_overview } from "@kakasoo/github-sdk/lib/structures/rate_minus_limit_minus_overview";
 import typia from "typia";
-
-import { rate_minus_limit_minus_overview } from "@ORGANIZATION/PROJECT-api/lib/structures/rate_minus_limit_minus_overview";
 
 export async function test_api_rate_limit_get(connection: api.IConnection) {
   const output: rate_minus_limit_minus_overview =

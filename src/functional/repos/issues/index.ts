@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposIssues } from "../../../structures/IApiReposIssues";
-import { issue } from "../../../structures/issue";
 import { body } from "../../../structures/body";
+import { issue } from "../../../structures/issue";
+
 export * as comments from "./comments";
 export * as events from "./events";
 export * as assignees from "./assignees";

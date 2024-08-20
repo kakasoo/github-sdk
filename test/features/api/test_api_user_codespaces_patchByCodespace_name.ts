@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { codespace } from "@kakasoo/github-sdk/lib/structures/codespace";
 import typia from "typia";
-
-import { codespace } from "@ORGANIZATION/PROJECT-api/lib/structures/codespace";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_user_codespaces_patchByCodespace_name(
   connection: api.IConnection,

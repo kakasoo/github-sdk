@@ -1,12 +1,13 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeScanningAlerts } from "../../../../structures/IApiReposCodeScanningAlerts";
-import { code_minus_scanning_minus_alert_minus_items } from "../../../../structures/code_minus_scanning_minus_alert_minus_items";
-import { code_minus_scanning_minus_alert } from "../../../../structures/code_minus_scanning_minus_alert";
 import { body } from "../../../../structures/body";
+import { code_minus_scanning_minus_alert } from "../../../../structures/code_minus_scanning_minus_alert";
+import { code_minus_scanning_minus_alert_minus_items } from "../../../../structures/code_minus_scanning_minus_alert_minus_items";
+
 export * as instances from "./instances";
 /**
  * List code scanning alerts for a repository.

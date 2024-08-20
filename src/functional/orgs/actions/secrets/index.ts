@@ -1,13 +1,14 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsActionsSecrets } from "../../../../structures/IApiOrgsActionsSecrets";
-import { response } from "../../../../structures/response";
-import { organization_minus_actions_minus_secret } from "../../../../structures/organization_minus_actions_minus_secret";
 import { body } from "../../../../structures/body";
 import { empty_minus_object } from "../../../../structures/empty_minus_object";
+import { organization_minus_actions_minus_secret } from "../../../../structures/organization_minus_actions_minus_secret";
+import { response } from "../../../../structures/response";
+
 export * as public_key from "./public_key";
 export * as repositories from "./repositories";
 /**

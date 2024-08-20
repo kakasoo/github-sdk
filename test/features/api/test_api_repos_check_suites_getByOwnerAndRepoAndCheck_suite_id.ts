@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { check_minus_suite } from "@kakasoo/github-sdk/lib/structures/check_minus_suite";
 import typia from "typia";
-
-import { check_minus_suite } from "@ORGANIZATION/PROJECT-api/lib/structures/check_minus_suite";
 
 export async function test_api_repos_check_suites_getByOwnerAndRepoAndCheck_suite_id(
   connection: api.IConnection,

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposIssuesLabels } from "../../../../structures/IApiReposIssuesLabels";
-import { label } from "../../../../structures/label";
 import { body } from "../../../../structures/body";
+import { label } from "../../../../structures/label";
+
 /**
  * List labels for an issue.
  * Lists all labels for an issue.

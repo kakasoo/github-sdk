@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposActionsRunsJobs } from "@kakasoo/github-sdk/lib/structures/IApiReposActionsRunsJobs";
+import { response } from "@kakasoo/github-sdk/lib/structures/response";
 import typia from "typia";
-
-import { response } from "@ORGANIZATION/PROJECT-api/lib/structures/response";
-import { IApiReposActionsRunsJobs } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposActionsRunsJobs";
 
 export async function test_api_repos_actions_runs_jobs_getByOwnerAndRepoAndRun_id(
   connection: api.IConnection,

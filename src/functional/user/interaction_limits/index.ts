@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
-import { response } from "../../../structures/response";
 import { interaction_minus_limit } from "../../../structures/interaction_minus_limit";
 import { interaction_minus_limit_minus_response } from "../../../structures/interaction_minus_limit_minus_response";
+import { response } from "../../../structures/response";
+
 /**
  * Get interaction restrictions for your public repositories.
  * Shows which type of GitHub user can interact with your public repositories and when the restriction expires.

@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposSecurityAdvisoriesReports } from "../../../../structures/IApiReposSecurityAdvisoriesReports";
 import { private_minus_vulnerability_minus_report_minus_create } from "../../../../structures/private_minus_vulnerability_minus_report_minus_create";
 import { repository_minus_advisory } from "../../../../structures/repository_minus_advisory";
+
 /**
  * Privately report a security vulnerability.
  * Report a security vulnerability to the maintainers of the repository.

@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposIssues } from "@kakasoo/github-sdk/lib/structures/IApiReposIssues";
+import { issue } from "@kakasoo/github-sdk/lib/structures/issue";
 import typia from "typia";
-
-import { issue } from "@ORGANIZATION/PROJECT-api/lib/structures/issue";
-import { IApiReposIssues } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposIssues";
 
 export async function test_api_repos_issues_getByOwnerAndRepo(
   connection: api.IConnection,

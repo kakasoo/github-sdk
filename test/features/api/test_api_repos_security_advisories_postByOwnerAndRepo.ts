@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { repository_minus_advisory } from "@kakasoo/github-sdk/lib/structures/repository_minus_advisory";
+import { repository_minus_advisory_minus_create } from "@kakasoo/github-sdk/lib/structures/repository_minus_advisory_minus_create";
 import typia from "typia";
-
-import { repository_minus_advisory } from "@ORGANIZATION/PROJECT-api/lib/structures/repository_minus_advisory";
-import { repository_minus_advisory_minus_create } from "@ORGANIZATION/PROJECT-api/lib/structures/repository_minus_advisory_minus_create";
 
 export async function test_api_repos_security_advisories_postByOwnerAndRepo(
   connection: api.IConnection,

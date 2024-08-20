@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposHooksDeliveries } from "@kakasoo/github-sdk/lib/structures/IApiReposHooksDeliveries";
+import { hook_minus_delivery_minus_item } from "@kakasoo/github-sdk/lib/structures/hook_minus_delivery_minus_item";
 import typia from "typia";
-
-import { hook_minus_delivery_minus_item } from "@ORGANIZATION/PROJECT-api/lib/structures/hook_minus_delivery_minus_item";
-import { IApiReposHooksDeliveries } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposHooksDeliveries";
 
 export async function test_api_repos_hooks_deliveries_getByOwnerAndRepoAndHook_id(
   connection: api.IConnection,

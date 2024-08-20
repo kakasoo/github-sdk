@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCodeSecurityConfiguration } from "../../../structures/IApiReposCodeSecurityConfiguration";
 import { code_minus_security_minus_configuration_minus_for_minus_repository } from "../../../structures/code_minus_security_minus_configuration_minus_for_minus_repository";
+
 /**
  * Get the code security configuration associated with a repository.
  * Get the code security configuration that manages a repository's code security settings.

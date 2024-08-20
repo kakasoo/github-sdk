@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { commit } from "@kakasoo/github-sdk/lib/structures/commit";
 import typia from "typia";
-
-import { commit } from "@ORGANIZATION/PROJECT-api/lib/structures/commit";
 
 export async function test_api_repos_pulls_commits_getByOwnerAndRepoAndPull_number(
   connection: api.IConnection,

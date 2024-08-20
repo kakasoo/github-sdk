@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { commit_minus_activity } from "@kakasoo/github-sdk/lib/structures/commit_minus_activity";
 import typia from "typia";
-
-import { commit_minus_activity } from "@ORGANIZATION/PROJECT-api/lib/structures/commit_minus_activity";
 
 export async function test_api_repos_stats_commit_activity_getByOwnerAndRepo(
   connection: api.IConnection,

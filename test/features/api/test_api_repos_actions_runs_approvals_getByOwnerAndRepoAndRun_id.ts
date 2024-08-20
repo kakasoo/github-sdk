@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { environment_minus_approvals } from "@kakasoo/github-sdk/lib/structures/environment_minus_approvals";
 import typia from "typia";
-
-import { environment_minus_approvals } from "@ORGANIZATION/PROJECT-api/lib/structures/environment_minus_approvals";
 
 export async function test_api_repos_actions_runs_approvals_getByOwnerAndRepoAndRun_id(
   connection: api.IConnection,

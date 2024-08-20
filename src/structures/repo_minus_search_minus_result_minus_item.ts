@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { nullable_minus_license_minus_simple } from "./nullable_minus_license_minus_simple";
+import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { search_minus_result_minus_text_minus_matches } from "./search_minus_result_minus_text_minus_matches";
 
 /**

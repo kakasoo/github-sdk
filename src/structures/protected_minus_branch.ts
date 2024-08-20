@@ -1,10 +1,10 @@
 import { tags } from "typia";
 
-import { status_minus_check_minus_policy } from "./status_minus_check_minus_policy";
-import { simple_minus_user } from "./simple_minus_user";
-import { team } from "./team";
-import { integration } from "./integration";
 import { branch_minus_restriction_minus_policy } from "./branch_minus_restriction_minus_policy";
+import { integration } from "./integration";
+import { simple_minus_user } from "./simple_minus_user";
+import { status_minus_check_minus_policy } from "./status_minus_check_minus_policy";
+import { team } from "./team";
 
 /**
  * Branch protections protect branches

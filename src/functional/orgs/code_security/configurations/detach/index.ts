@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsCodeSecurityConfigurationsDetach } from "../../../../../structures/IApiOrgsCodeSecurityConfigurationsDetach";
 import { body } from "../../../../../structures/body";
+
 /**
  * Detach configurations from repositories.
  * Detach code security configuration(s) from a set of repositories.

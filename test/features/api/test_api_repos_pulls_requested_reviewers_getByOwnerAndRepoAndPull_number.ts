@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { pull_minus_request_minus_review_minus_request } from "@kakasoo/github-sdk/lib/structures/pull_minus_request_minus_review_minus_request";
 import typia from "typia";
-
-import { pull_minus_request_minus_review_minus_request } from "@ORGANIZATION/PROJECT-api/lib/structures/pull_minus_request_minus_review_minus_request";
 
 export async function test_api_repos_pulls_requested_reviewers_getByOwnerAndRepoAndPull_number(
   connection: api.IConnection,

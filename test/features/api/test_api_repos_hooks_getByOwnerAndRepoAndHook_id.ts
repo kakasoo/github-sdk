@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { hook } from "@kakasoo/github-sdk/lib/structures/hook";
 import typia from "typia";
-
-import { hook } from "@ORGANIZATION/PROJECT-api/lib/structures/hook";
 
 export async function test_api_repos_hooks_getByOwnerAndRepoAndHook_id(
   connection: api.IConnection,

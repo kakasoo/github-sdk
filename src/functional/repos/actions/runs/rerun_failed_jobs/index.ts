@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposActionsRunsRerunFailedJobs } from "../../../../../structures/IApiReposActionsRunsRerunFailedJobs";
 import { body } from "../../../../../structures/body";
 import { empty_minus_object } from "../../../../../structures/empty_minus_object";
+
 /**
  * Re-run failed jobs from a workflow run.
  * Re-run all of the failed jobs and their dependent jobs in a workflow run using the `id` of the workflow run.

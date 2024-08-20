@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { user_minus_role_minus_assignment } from "@kakasoo/github-sdk/lib/structures/user_minus_role_minus_assignment";
 import typia from "typia";
-
-import { user_minus_role_minus_assignment } from "@ORGANIZATION/PROJECT-api/lib/structures/user_minus_role_minus_assignment";
 
 export async function test_api_orgs_organization_roles_users_getByOrgAndRole_id(
   connection: api.IConnection,

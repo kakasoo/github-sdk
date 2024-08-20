@@ -3,11 +3,11 @@ import { tags } from "typia";
 import { enterprise_minus_webhooks } from "./enterprise_minus_webhooks";
 import { installation } from "./installation";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
-import { webhooks_repositories_added } from "./webhooks_repositories_added";
 import { repository_minus_webhooks } from "./repository_minus_webhooks";
+import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
+import { webhooks_repositories_added } from "./webhooks_repositories_added";
 import { webhooks_repository_selection } from "./webhooks_repository_selection";
 import { webhooks_user } from "./webhooks_user";
-import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
 
 /**
  * @title installation_repositories added event

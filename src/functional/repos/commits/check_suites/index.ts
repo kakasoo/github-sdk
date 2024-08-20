@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposCommitsCheckSuites } from "../../../../structures/IApiReposCommitsCheckSuites";
 import { response } from "../../../../structures/response";
+
 /**
  * List check suites for a Git reference.
  * Lists check suites for a commit `ref`. The `ref` can be a SHA, branch name, or a tag name.

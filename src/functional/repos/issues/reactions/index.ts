@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposIssuesReactions } from "../../../../structures/IApiReposIssuesReactions";
-import { reaction } from "../../../../structures/reaction";
 import { body } from "../../../../structures/body";
+import { reaction } from "../../../../structures/reaction";
+
 /**
  * List reactions for an issue.
  * List the reactions to an [issue](https://docs.github.com/rest/issues/issues#get-an-issue).

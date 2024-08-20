@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsInvitations } from "@kakasoo/github-sdk/lib/structures/IApiOrgsInvitations";
+import { organization_minus_invitation } from "@kakasoo/github-sdk/lib/structures/organization_minus_invitation";
 import typia from "typia";
-
-import { organization_minus_invitation } from "@ORGANIZATION/PROJECT-api/lib/structures/organization_minus_invitation";
-import { IApiOrgsInvitations } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsInvitations";
 
 export async function test_api_orgs_invitations_getByOrg(
   connection: api.IConnection,

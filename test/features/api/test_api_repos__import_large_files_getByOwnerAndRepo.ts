@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { porter_minus_large_minus_file } from "@kakasoo/github-sdk/lib/structures/porter_minus_large_minus_file";
 import typia from "typia";
-
-import { porter_minus_large_minus_file } from "@ORGANIZATION/PROJECT-api/lib/structures/porter_minus_large_minus_file";
 
 export async function test_api_repos__import_large_files_getByOwnerAndRepo(
   connection: api.IConnection,

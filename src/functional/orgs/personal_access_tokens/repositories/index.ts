@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
-import typia, { tags } from "typia";
-import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
 import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
+import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
+import typia, { tags } from "typia";
 
 import { IApiOrgsPersonalAccessTokensRepositories } from "../../../../structures/IApiOrgsPersonalAccessTokensRepositories";
 import { minimal_minus_repository } from "../../../../structures/minimal_minus_repository";
+
 /**
  * List repositories a fine-grained personal access token has access to.
  * Lists the repositories a fine-grained personal access token has access to.

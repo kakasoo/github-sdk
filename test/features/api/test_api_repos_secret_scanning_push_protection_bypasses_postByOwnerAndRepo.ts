@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { secret_minus_scanning_minus_push_minus_protection_minus_bypass } from "@kakasoo/github-sdk/lib/structures/secret_minus_scanning_minus_push_minus_protection_minus_bypass";
 import typia from "typia";
-
-import { secret_minus_scanning_minus_push_minus_protection_minus_bypass } from "@ORGANIZATION/PROJECT-api/lib/structures/secret_minus_scanning_minus_push_minus_protection_minus_bypass";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_secret_scanning_push_protection_bypasses_postByOwnerAndRepo(
   connection: api.IConnection,

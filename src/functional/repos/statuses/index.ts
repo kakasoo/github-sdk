@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposStatuses } from "../../../structures/IApiReposStatuses";
 import { body } from "../../../structures/body";
 import { status } from "../../../structures/status";
+
 /**
  * Create a commit status.
  * Users with push access in a repository can create commit statuses for a given SHA.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { secret_minus_scanning_minus_alert } from "@kakasoo/github-sdk/lib/structures/secret_minus_scanning_minus_alert";
 import typia from "typia";
-
-import { secret_minus_scanning_minus_alert } from "@ORGANIZATION/PROJECT-api/lib/structures/secret_minus_scanning_minus_alert";
 
 export async function test_api_repos_secret_scanning_alerts_getByOwnerAndRepo(
   connection: api.IConnection,

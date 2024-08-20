@@ -1,13 +1,13 @@
 import { tags } from "typia";
 
-import { webhook_minus_config_minus_content_minus_type } from "./webhook_minus_config_minus_content_minus_type";
-import { webhook_minus_config_minus_insecure_minus_ssl } from "./webhook_minus_config_minus_insecure_minus_ssl";
-import { webhook_minus_config_minus_secret } from "./webhook_minus_config_minus_secret";
-import { webhook_minus_config_minus_url } from "./webhook_minus_config_minus_url";
 import { hook_minus_response } from "./hook_minus_response";
 import { organization_minus_simple_minus_webhooks } from "./organization_minus_simple_minus_webhooks";
 import { repository_minus_webhooks } from "./repository_minus_webhooks";
 import { simple_minus_user_minus_webhooks } from "./simple_minus_user_minus_webhooks";
+import { webhook_minus_config_minus_content_minus_type } from "./webhook_minus_config_minus_content_minus_type";
+import { webhook_minus_config_minus_insecure_minus_ssl } from "./webhook_minus_config_minus_insecure_minus_ssl";
+import { webhook_minus_config_minus_secret } from "./webhook_minus_config_minus_secret";
+import { webhook_minus_config_minus_url } from "./webhook_minus_config_minus_url";
 
 export type webhook_minus_ping = {
   /**

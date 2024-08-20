@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposMergeUpstream } from "../../../structures/IApiReposMergeUpstream";
 import { body } from "../../../structures/body";
 import { merged_minus_upstream } from "../../../structures/merged_minus_upstream";
+
 /**
  * Sync a fork branch with the upstream repository.
  * Sync a branch of a forked repository to keep it up-to-date with the upstream repository.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { thread } from "@kakasoo/github-sdk/lib/structures/thread";
 import typia from "typia";
-
-import { thread } from "@ORGANIZATION/PROJECT-api/lib/structures/thread";
 
 export async function test_api_notifications_threads_getByThread_id(
   connection: api.IConnection,

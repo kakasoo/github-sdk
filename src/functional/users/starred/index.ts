@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersStarred } from "../../../structures/IApiUsersStarred";
-import { starred_minus_repository } from "../../../structures/starred_minus_repository";
 import { repository } from "../../../structures/repository";
+import { starred_minus_repository } from "../../../structures/starred_minus_repository";
+
 /**
  * List repositories starred by a user.
  * Lists repositories a user has starred.

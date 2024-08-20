@@ -1,11 +1,11 @@
 import { tags } from "typia";
 
-import { simple_minus_repository } from "./simple_minus_repository";
-import { simple_minus_user } from "./simple_minus_user";
 import { code_minus_scanning_minus_variant_minus_analysis_minus_language } from "./code_minus_scanning_minus_variant_minus_analysis_minus_language";
 import { code_minus_scanning_minus_variant_minus_analysis_minus_repository } from "./code_minus_scanning_minus_variant_minus_analysis_minus_repository";
-import { code_minus_scanning_minus_variant_minus_analysis_minus_status } from "./code_minus_scanning_minus_variant_minus_analysis_minus_status";
 import { code_minus_scanning_minus_variant_minus_analysis_minus_skipped_minus_repo_minus_group } from "./code_minus_scanning_minus_variant_minus_analysis_minus_skipped_minus_repo_minus_group";
+import { code_minus_scanning_minus_variant_minus_analysis_minus_status } from "./code_minus_scanning_minus_variant_minus_analysis_minus_status";
+import { simple_minus_repository } from "./simple_minus_repository";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * A run of a CodeQL query against one or more repositories.

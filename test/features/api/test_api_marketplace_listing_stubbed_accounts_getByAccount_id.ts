@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { marketplace_minus_purchase } from "@kakasoo/github-sdk/lib/structures/marketplace_minus_purchase";
 import typia from "typia";
-
-import { marketplace_minus_purchase } from "@ORGANIZATION/PROJECT-api/lib/structures/marketplace_minus_purchase";
 
 export async function test_api_marketplace_listing_stubbed_accounts_getByAccount_id(
   connection: api.IConnection,

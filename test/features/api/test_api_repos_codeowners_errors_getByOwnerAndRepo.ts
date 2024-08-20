@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposCodeownersErrors } from "@kakasoo/github-sdk/lib/structures/IApiReposCodeownersErrors";
+import { codeowners_minus_errors } from "@kakasoo/github-sdk/lib/structures/codeowners_minus_errors";
 import typia from "typia";
-
-import { codeowners_minus_errors } from "@ORGANIZATION/PROJECT-api/lib/structures/codeowners_minus_errors";
-import { IApiReposCodeownersErrors } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposCodeownersErrors";
 
 export async function test_api_repos_codeowners_errors_getByOwnerAndRepo(
   connection: api.IConnection,

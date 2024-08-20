@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
 import { integration } from "./integration";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * Assigned Issue Event

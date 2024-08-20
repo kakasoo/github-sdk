@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { project_minus_card } from "@kakasoo/github-sdk/lib/structures/project_minus_card";
 import typia from "typia";
-
-import { project_minus_card } from "@ORGANIZATION/PROJECT-api/lib/structures/project_minus_card";
 
 export async function test_api_projects_columns_cards_getByCard_id(
   connection: api.IConnection,

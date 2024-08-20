@@ -1,6 +1,7 @@
 import { IConnection } from "@nestia/fetcher";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
+
 /**
  * Get the Zen of GitHub.
  * Get a random sentence from the Zen of GitHub

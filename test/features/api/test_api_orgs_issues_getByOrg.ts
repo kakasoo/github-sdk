@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiOrgsIssues } from "@kakasoo/github-sdk/lib/structures/IApiOrgsIssues";
+import { issue } from "@kakasoo/github-sdk/lib/structures/issue";
 import typia from "typia";
-
-import { issue } from "@ORGANIZATION/PROJECT-api/lib/structures/issue";
-import { IApiOrgsIssues } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiOrgsIssues";
 
 export async function test_api_orgs_issues_getByOrg(
   connection: api.IConnection,

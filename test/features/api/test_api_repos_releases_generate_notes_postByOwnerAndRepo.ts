@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { body } from "@kakasoo/github-sdk/lib/structures/body";
+import { release_minus_notes_minus_content } from "@kakasoo/github-sdk/lib/structures/release_minus_notes_minus_content";
 import typia from "typia";
-
-import { release_minus_notes_minus_content } from "@ORGANIZATION/PROJECT-api/lib/structures/release_minus_notes_minus_content";
-import { body } from "@ORGANIZATION/PROJECT-api/lib/structures/body";
 
 export async function test_api_repos_releases_generate_notes_postByOwnerAndRepo(
   connection: api.IConnection,

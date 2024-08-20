@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { user_minus_marketplace_minus_purchase } from "@kakasoo/github-sdk/lib/structures/user_minus_marketplace_minus_purchase";
 import typia from "typia";
-
-import { user_minus_marketplace_minus_purchase } from "@ORGANIZATION/PROJECT-api/lib/structures/user_minus_marketplace_minus_purchase";
 
 export async function test_api_user_marketplace_purchases_get(
   connection: api.IConnection,

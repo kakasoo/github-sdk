@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserInstallationsRepositories } from "../../../../structures/IApiUserInstallationsRepositories";
 import { response } from "../../../../structures/response";
+
 /**
  * List repositories accessible to the user access token.
  * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access for an installation.

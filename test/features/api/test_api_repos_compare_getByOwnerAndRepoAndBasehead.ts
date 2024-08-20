@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { commit_minus_comparison } from "@kakasoo/github-sdk/lib/structures/commit_minus_comparison";
 import typia from "typia";
-
-import { commit_minus_comparison } from "@ORGANIZATION/PROJECT-api/lib/structures/commit_minus_comparison";
 
 export async function test_api_repos_compare_getByOwnerAndRepoAndBasehead(
   connection: api.IConnection,

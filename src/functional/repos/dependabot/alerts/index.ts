@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposDependabotAlerts } from "../../../../structures/IApiReposDependabotAlerts";
-import { dependabot_minus_alert } from "../../../../structures/dependabot_minus_alert";
 import { body } from "../../../../structures/body";
+import { dependabot_minus_alert } from "../../../../structures/dependabot_minus_alert";
+
 /**
  * List Dependabot alerts for a repository.
  * OAuth app tokens and personal access tokens (classic) need the `security_events` scope to use this endpoint. If this endpoint is only used with public repositories, the token can use the `public_repo` scope instead.

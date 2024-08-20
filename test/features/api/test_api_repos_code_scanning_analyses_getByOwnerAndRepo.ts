@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposCodeScanningAnalyses } from "@kakasoo/github-sdk/lib/structures/IApiReposCodeScanningAnalyses";
+import { code_minus_scanning_minus_analysis } from "@kakasoo/github-sdk/lib/structures/code_minus_scanning_minus_analysis";
 import typia from "typia";
-
-import { code_minus_scanning_minus_analysis } from "@ORGANIZATION/PROJECT-api/lib/structures/code_minus_scanning_minus_analysis";
-import { IApiReposCodeScanningAnalyses } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposCodeScanningAnalyses";
 
 export async function test_api_repos_code_scanning_analyses_getByOwnerAndRepo(
   connection: api.IConnection,

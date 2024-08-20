@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
-import { release_minus_asset } from "./release_minus_asset";
 import { reaction_minus_rollup } from "./reaction_minus_rollup";
+import { release_minus_asset } from "./release_minus_asset";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * A release.

@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { dependabot_minus_secret } from "@kakasoo/github-sdk/lib/structures/dependabot_minus_secret";
 import typia from "typia";
-
-import { dependabot_minus_secret } from "@ORGANIZATION/PROJECT-api/lib/structures/dependabot_minus_secret";
 
 export async function test_api_repos_dependabot_secrets_getByOwnerAndRepoAndSecret_name(
   connection: api.IConnection,

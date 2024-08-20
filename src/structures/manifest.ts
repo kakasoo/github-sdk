@@ -1,7 +1,7 @@
 import { tags } from "typia";
 
-import { metadata } from "./metadata";
 import { dependency } from "./dependency";
+import { metadata } from "./metadata";
 
 export type manifest = {
   /**

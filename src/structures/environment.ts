@@ -1,10 +1,10 @@
 import { tags } from "typia";
 
-import { wait_minus_timer } from "./wait_minus_timer";
+import { deployment_minus_branch_minus_policy_minus_settings } from "./deployment_minus_branch_minus_policy_minus_settings";
 import { deployment_minus_reviewer_minus_type } from "./deployment_minus_reviewer_minus_type";
 import { simple_minus_user } from "./simple_minus_user";
 import { team } from "./team";
-import { deployment_minus_branch_minus_policy_minus_settings } from "./deployment_minus_branch_minus_policy_minus_settings";
+import { wait_minus_timer } from "./wait_minus_timer";
 
 /**
  * Details of a deployment environment

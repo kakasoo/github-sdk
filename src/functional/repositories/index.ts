@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiRepositories } from "../../structures/IApiRepositories";
 import { minimal_minus_repository } from "../../structures/minimal_minus_repository";
+
 /**
  * List public repositories.
  * Lists all public repositories in the order that they were created.

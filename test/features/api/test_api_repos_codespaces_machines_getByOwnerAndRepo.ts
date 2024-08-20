@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposCodespacesMachines } from "@kakasoo/github-sdk/lib/structures/IApiReposCodespacesMachines";
+import { response } from "@kakasoo/github-sdk/lib/structures/response";
 import typia from "typia";
-
-import { response } from "@ORGANIZATION/PROJECT-api/lib/structures/response";
-import { IApiReposCodespacesMachines } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposCodespacesMachines";
 
 export async function test_api_repos_codespaces_machines_getByOwnerAndRepo(
   connection: api.IConnection,

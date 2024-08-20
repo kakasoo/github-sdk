@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposBranchesProtectionRequiredStatusChecks } from "../../../../../structures/IApiReposBranchesProtectionRequiredStatusChecks";
-import { status_minus_check_minus_policy } from "../../../../../structures/status_minus_check_minus_policy";
 import { body } from "../../../../../structures/body";
+import { status_minus_check_minus_policy } from "../../../../../structures/status_minus_check_minus_policy";
+
 export * as contexts from "./contexts";
 /**
  * Get status checks protection.

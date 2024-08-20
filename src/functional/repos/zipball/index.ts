@@ -1,9 +1,10 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposZipball } from "../../../structures/IApiReposZipball";
+
 /**
  * Download a repository archive (zip).
  * Gets a redirect URL to download a zip archive for a repository. If you omit `:ref`, the repository’s default branch (usually

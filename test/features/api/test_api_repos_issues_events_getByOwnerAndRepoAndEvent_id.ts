@@ -1,7 +1,6 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { issue_minus_event } from "@kakasoo/github-sdk/lib/structures/issue_minus_event";
 import typia, { tags } from "typia";
-
-import { issue_minus_event } from "@ORGANIZATION/PROJECT-api/lib/structures/issue_minus_event";
 
 export async function test_api_repos_issues_events_getByOwnerAndRepoAndEvent_id(
   connection: api.IConnection,

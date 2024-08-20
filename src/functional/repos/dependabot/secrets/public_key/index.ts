@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiReposDependabotSecretsPublicKey } from "../../../../../structures/IApiReposDependabotSecretsPublicKey";
 import { dependabot_minus_public_minus_key } from "../../../../../structures/dependabot_minus_public_minus_key";
+
 /**
  * Get a repository public key.
  * Gets your public key, which you need to encrypt secrets. You need to

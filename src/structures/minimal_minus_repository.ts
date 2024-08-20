@@ -1,8 +1,8 @@
 import { tags } from "typia";
 
-import { simple_minus_user } from "./simple_minus_user";
 import { code_minus_of_minus_conduct } from "./code_minus_of_minus_conduct";
 import { security_minus_and_minus_analysis } from "./security_minus_and_minus_analysis";
+import { simple_minus_user } from "./simple_minus_user";
 
 /**
  * Minimal Repository

@@ -1,8 +1,7 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@kakasoo/github-sdk";
+import { IApiReposBranches } from "@kakasoo/github-sdk/lib/structures/IApiReposBranches";
+import { short_minus_branch } from "@kakasoo/github-sdk/lib/structures/short_minus_branch";
 import typia from "typia";
-
-import { short_minus_branch } from "@ORGANIZATION/PROJECT-api/lib/structures/short_minus_branch";
-import { IApiReposBranches } from "@ORGANIZATION/PROJECT-api/lib/structures/IApiReposBranches";
 
 export async function test_api_repos_branches_getByOwnerAndRepo(
   connection: api.IConnection,

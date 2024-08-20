@@ -4,6 +4,7 @@ import typia from "typia";
 
 import { IApiGistsStarred } from "../../../structures/IApiGistsStarred";
 import { base_minus_gist } from "../../../structures/base_minus_gist";
+
 /**
  * List starred gists.
  * List the authenticated user's starred gists:
