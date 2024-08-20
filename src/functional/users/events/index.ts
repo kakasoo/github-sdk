@@ -1,12 +1,13 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersEvents } from "../../../structures/IApiUsersEvents";
 import { event } from "../../../structures/event";
+
 export * as orgs from "./orgs";
-export * as public from "./public";
+export * as publics from "./public";
 /**
  * List events for the authenticated user.
  * If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events.

@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsPackages } from "../../../structures/IApiOrgsPackages";
-import { package } from "../../../structures/package";
+import { packages } from "../../../structures/package";
+
 export * as restore from "./restore";
 export * as versions from "./versions";
 /**
@@ -42,7 +43,7 @@ export async function getByOrg(
 export namespace getByOrg {
   export type Headers = IApiOrgsPackages.GetHeader;
   export type Query = IApiOrgsPackages.GetQuery;
-  export type Output = package[];
+  export type Output = packages[];
 
   export const METADATA = {
     method: "GET",
@@ -66,8 +67,8 @@ export namespace getByOrg {
       ? location
       : `${location}?${variables.toString()}`;
   };
-  export const random = (g?: Partial<typia.IRandomGenerator>): package[] =>
-    typia.random<package[]>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages[] =>
+    typia.random<packages[]>(g);
   export const simulate = (
     connection: IConnection<getByOrg.Headers>,
     org: string,
@@ -142,7 +143,7 @@ export async function getByOrgAndPackage_typeAndPackage_name(
 }
 export namespace getByOrgAndPackage_typeAndPackage_name {
   export type Headers = IApiOrgsPackages.GetHeader;
-  export type Output = package;
+  export type Output = packages;
 
   export const METADATA = {
     method: "GET",
@@ -160,8 +161,8 @@ export namespace getByOrgAndPackage_typeAndPackage_name {
     package_name: string,
   ) =>
     `/orgs/${encodeURIComponent(org ?? "null")}/packages/${encodeURIComponent(package_type ?? "null")}/${encodeURIComponent(package_name ?? "null")}`;
-  export const random = (g?: Partial<typia.IRandomGenerator>): package =>
-    typia.random<package>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages =>
+    typia.random<packages>(g);
   export const simulate = (
     connection: IConnection<getByOrgAndPackage_typeAndPackage_name.Headers>,
     org: string,

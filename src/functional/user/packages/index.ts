@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUserPackages } from "../../../structures/IApiUserPackages";
-import { package } from "../../../structures/package";
+import { packages } from "../../../structures/package";
+
 export * as restore from "./restore";
 export * as versions from "./versions";
 /**
@@ -41,7 +42,7 @@ export async function get(
 export namespace get {
   export type Headers = IApiUserPackages.GetHeader;
   export type Query = IApiUserPackages.GetQuery;
-  export type Output = package[];
+  export type Output = packages[];
 
   export const METADATA = {
     method: "GET",
@@ -65,8 +66,8 @@ export namespace get {
       ? location
       : `${location}?${variables.toString()}`;
   };
-  export const random = (g?: Partial<typia.IRandomGenerator>): package[] =>
-    typia.random<package[]>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages[] =>
+    typia.random<packages[]>(g);
   export const simulate = (
     connection: IConnection<get.Headers>,
     query: get.Query,
@@ -136,7 +137,7 @@ export async function getByPackage_typeAndPackage_name(
 }
 export namespace getByPackage_typeAndPackage_name {
   export type Headers = IApiUserPackages.GetHeader;
-  export type Output = package;
+  export type Output = packages;
 
   export const METADATA = {
     method: "GET",
@@ -150,8 +151,8 @@ export namespace getByPackage_typeAndPackage_name {
 
   export const path = (package_type: string, package_name: string) =>
     `/user/packages/${encodeURIComponent(package_type ?? "null")}/${encodeURIComponent(package_name ?? "null")}`;
-  export const random = (g?: Partial<typia.IRandomGenerator>): package =>
-    typia.random<package>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages =>
+    typia.random<packages>(g);
   export const simulate = (
     connection: IConnection<getByPackage_typeAndPackage_name.Headers>,
     package_type: string,

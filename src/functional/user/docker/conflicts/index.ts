@@ -2,7 +2,8 @@ import { IConnection } from "@nestia/fetcher";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
 
-import { package } from "../../../../structures/package";
+import { packages } from "../../../../structures/package";
+
 /**
  * Get list of conflicting packages during Docker migration for authenticated-user.
  * Lists all packages that are owned by the authenticated user within the user's namespace, and that encountered a conflict during a Docker migration.
@@ -32,7 +33,7 @@ export async function get(connection: IConnection): Promise<get.Output> {
       );
 }
 export namespace get {
-  export type Output = package[];
+  export type Output = packages[];
 
   export const METADATA = {
     method: "GET",
@@ -45,8 +46,8 @@ export namespace get {
   } as const;
 
   export const path = () => "/user/docker/conflicts";
-  export const random = (g?: Partial<typia.IRandomGenerator>): package[] =>
-    typia.random<package[]>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages[] =>
+    typia.random<packages[]>(g);
   export const simulate = (connection: IConnection): Output => {
     return random(
       "object" === typeof connection.simulate && null !== connection.simulate

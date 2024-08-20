@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiOrgsDockerConflicts } from "../../../../structures/IApiOrgsDockerConflicts";
-import { package } from "../../../../structures/package";
+import { packages } from "../../../../structures/package";
+
 /**
  * Get list of conflicting packages during Docker migration for organization.
  * Lists all packages that are in a specific organization, are readable by the requesting user, and that encountered a conflict during a Docker migration.
@@ -38,7 +39,7 @@ export async function getByOrg(
 }
 export namespace getByOrg {
   export type Headers = IApiOrgsDockerConflicts.GetHeader;
-  export type Output = package[];
+  export type Output = packages[];
 
   export const METADATA = {
     method: "GET",
@@ -52,8 +53,8 @@ export namespace getByOrg {
 
   export const path = (org: string) =>
     `/orgs/${encodeURIComponent(org ?? "null")}/docker/conflicts`;
-  export const random = (g?: Partial<typia.IRandomGenerator>): package[] =>
-    typia.random<package[]>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages[] =>
+    typia.random<packages[]>(g);
   export const simulate = (
     connection: IConnection<getByOrg.Headers>,
     org: string,

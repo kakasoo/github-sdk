@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersPackages } from "../../../structures/IApiUsersPackages";
-import { package } from "../../../structures/package";
+import { packages } from "../../../structures/package";
+
 export * as restore from "./restore";
 export * as versions from "./versions";
 /**
@@ -42,7 +43,7 @@ export async function getByUsername(
 export namespace getByUsername {
   export type Headers = IApiUsersPackages.GetHeader;
   export type Query = IApiUsersPackages.GetQuery;
-  export type Output = package[];
+  export type Output = packages[];
 
   export const METADATA = {
     method: "GET",
@@ -66,8 +67,8 @@ export namespace getByUsername {
       ? location
       : `${location}?${variables.toString()}`;
   };
-  export const random = (g?: Partial<typia.IRandomGenerator>): package[] =>
-    typia.random<package[]>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages[] =>
+    typia.random<packages[]>(g);
   export const simulate = (
     connection: IConnection<getByUsername.Headers>,
     username: string,
@@ -142,7 +143,7 @@ export async function getByUsernameAndPackage_typeAndPackage_name(
 }
 export namespace getByUsernameAndPackage_typeAndPackage_name {
   export type Headers = IApiUsersPackages.GetHeader;
-  export type Output = package;
+  export type Output = packages;
 
   export const METADATA = {
     method: "GET",
@@ -160,8 +161,8 @@ export namespace getByUsernameAndPackage_typeAndPackage_name {
     package_name: string,
   ) =>
     `/users/${encodeURIComponent(username ?? "null")}/packages/${encodeURIComponent(package_type ?? "null")}/${encodeURIComponent(package_name ?? "null")}`;
-  export const random = (g?: Partial<typia.IRandomGenerator>): package =>
-    typia.random<package>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages =>
+    typia.random<packages>(g);
   export const simulate = (
     connection: IConnection<getByUsernameAndPackage_typeAndPackage_name.Headers>,
     username: string,

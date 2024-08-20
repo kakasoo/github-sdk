@@ -1,14 +1,14 @@
 import { tags } from "typia";
 
-import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 import { nullable_minus_minimal_minus_repository } from "./nullable_minus_minimal_minus_repository";
+import { nullable_minus_simple_minus_user } from "./nullable_minus_simple_minus_user";
 
 /**
  * A software package
  *
  * @title Package
  */
-export type package = {
+export type packages = {
   /**
    * Unique identifier of the package.
    */

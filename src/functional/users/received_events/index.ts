@@ -1,11 +1,12 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersReceivedEvents } from "../../../structures/IApiUsersReceivedEvents";
 import { event } from "../../../structures/event";
-export * as public from "./public";
+
+export * as publics from "./public";
 /**
  * List events received by the authenticated user.
  * These are events that you've received by watching repositories and following users. If you are authenticated as the

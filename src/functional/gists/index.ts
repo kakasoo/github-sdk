@@ -1,13 +1,14 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiGists } from "../../structures/IApiGists";
 import { base_minus_gist } from "../../structures/base_minus_gist";
 import { body } from "../../structures/body";
 import { gist_minus_simple } from "../../structures/gist_minus_simple";
-export * as public from "./public";
+
+export * as publics from "./public";
 export * as starred from "./starred";
 export * as comments from "./comments";
 export * as commits from "./commits";

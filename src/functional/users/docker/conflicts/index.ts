@@ -1,10 +1,11 @@
-import { IConnection, HttpError } from "@nestia/fetcher";
+import { HttpError, IConnection } from "@nestia/fetcher";
+import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 import { PlainFetcher } from "@nestia/fetcher/lib/PlainFetcher";
 import typia from "typia";
-import { NestiaSimulator } from "@nestia/fetcher/lib/NestiaSimulator";
 
 import { IApiUsersDockerConflicts } from "../../../../structures/IApiUsersDockerConflicts";
-import { package } from "../../../../structures/package";
+import { packages } from "../../../../structures/package";
+
 /**
  * Get list of conflicting packages during Docker migration for user.
  * Lists all packages that are in a specific user's namespace, that the requesting user has access to, and that encountered a conflict during Docker migration.
@@ -38,7 +39,7 @@ export async function getByUsername(
 }
 export namespace getByUsername {
   export type Headers = IApiUsersDockerConflicts.GetHeader;
-  export type Output = package[];
+  export type Output = packages[];
 
   export const METADATA = {
     method: "GET",
@@ -52,8 +53,8 @@ export namespace getByUsername {
 
   export const path = (username: string) =>
     `/users/${encodeURIComponent(username ?? "null")}/docker/conflicts`;
-  export const random = (g?: Partial<typia.IRandomGenerator>): package[] =>
-    typia.random<package[]>(g);
+  export const random = (g?: Partial<typia.IRandomGenerator>): packages[] =>
+    typia.random<packages[]>(g);
   export const simulate = (
     connection: IConnection<getByUsername.Headers>,
     username: string,
