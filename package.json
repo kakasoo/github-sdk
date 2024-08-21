@@ -1,6 +1,6 @@
 {
   "name": "@kakasoo/github-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -42,7 +42,7 @@
   "dependencies": {
     "@nestia/fetcher": "^3.11.1",
     "tgrid": "^1.0.3",
-    "typia": "^6.8.0"
+    "typia": "^6.9.0"
   },
   "devDependencies": {
     "@nestia/e2e": "^0.7.0",
